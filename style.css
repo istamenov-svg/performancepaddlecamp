@@ -431,6 +431,45 @@ p:last-child { margin-bottom: 0; }
   min-height: 62vh;
 }
 
+/* Image hero - full width, natural aspect ratio, text overlay at bottom */
+.hero--img {
+  min-height: auto;
+  padding-top: 0;
+  display: block;
+  position: relative;
+}
+
+.hero--img__photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: var(--nav-height);
+}
+
+.hero--img__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 80px 24px 40px;
+  background: linear-gradient(to top, rgba(15,23,32,0.85) 0%, rgba(15,23,32,0.5) 50%, transparent 100%);
+  text-align: center;
+  color: var(--white);
+}
+
+.hero--img__overlay h1 {
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.hero--img__overlay .subtitle {
+  color: rgba(255,255,255,0.8);
+}
+
+.hero--img__overlay .eyebrow {
+  color: var(--sand-light);
+}
+
 /* Photo hero - preserves image natural aspect ratio */
 .hero--photo {
   min-height: auto;
@@ -1449,6 +1488,9 @@ p:last-child { margin-bottom: 0; }
   /* Hero */
   .hero { min-height: 80vh; }
   .hero--short { min-height: 50vh; }
+  .hero--img { min-height: auto; }
+  .hero--img__overlay { padding: 48px 16px 24px; }
+  .hero--img__overlay h1 { font-size: clamp(1.4rem, 5vw, 2rem); }
 
   .hero__content h1 {
     font-size: clamp(1.6rem, 5vw, 2.4rem);
