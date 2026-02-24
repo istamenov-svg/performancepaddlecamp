@@ -119,6 +119,19 @@ p:last-child { margin-bottom: 0; }
 .section--navy .eyebrow { color: var(--sand-light); }
 .section--navy .subtitle { color: rgba(255,255,255,0.65); }
 
+.section--photo {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section--photo__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15,23,32,0.55);
+}
+
 .section--cream {
   background: var(--off-white);
 }
