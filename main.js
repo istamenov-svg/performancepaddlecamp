@@ -57,14 +57,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+  // --- Nav Dropdown ---
+  document.querySelectorAll('.nav__dropdown-toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const dropdown = btn.closest('.nav__dropdown');
+      dropdown.classList.toggle('is-open');
+    });
+  });
+  // Close dropdown on outside click
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.nav__dropdown.is-open').forEach(d => d.classList.remove('is-open'));
+  });
+  // Stop clicks inside dropdown from closing it
+  document.querySelectorAll('.nav__dropdown-menu').forEach(menu => {
+    menu.addEventListener('click', (e) => e.stopPropagation());
+  });
+
   // --- Active Nav Link ---
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const dropdownPages = ['gallery.html', 'results.html', 'faq.html'];
   document.querySelectorAll('.nav__links a').forEach(a => {
     const href = a.getAttribute('href');
     if (href === currentPage || (currentPage === '' && href === 'index.html')) {
       a.classList.add('active');
     }
   });
+  // Highlight dropdown toggle when on a dropdown page
+  if (dropdownPages.includes(currentPage)) {
+    document.querySelectorAll('.nav__dropdown-toggle').forEach(btn => {
+      btn.style.color = 'var(--white)';
+    });
+  }
 
   // --- Form Submission Feedback ---
   document.querySelectorAll('form').forEach(form => {

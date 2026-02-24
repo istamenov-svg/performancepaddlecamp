@@ -306,6 +306,96 @@ p:last-child { margin-bottom: 0; }
   background: var(--sand-light) !important;
 }
 
+/* Nav dropdown */
+.nav__dropdown {
+  position: relative;
+}
+
+.nav__dropdown-toggle {
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  transition: color 0.25s ease;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.nav__dropdown-toggle::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid currentColor;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.25s ease;
+}
+
+.nav__dropdown-toggle:hover,
+.nav__dropdown.is-open .nav__dropdown-toggle {
+  color: var(--white);
+}
+
+.nav__dropdown.is-open .nav__dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+.nav__dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  min-width: 200px;
+  padding: 8px 0;
+  z-index: 200;
+}
+
+.nav__dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: var(--white);
+  border-radius: 2px;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.nav__dropdown.is-open .nav__dropdown-menu {
+  display: block;
+}
+
+.nav__dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dark) !important;
+  transition: background 0.15s ease;
+  white-space: nowrap;
+}
+
+.nav__dropdown-menu a:hover {
+  background: var(--off-white);
+  color: var(--navy-deep) !important;
+}
+
 /* Mobile nav toggle */
 .nav__toggle {
   display: none;
@@ -1289,6 +1379,38 @@ p:last-child { margin-bottom: 0; }
   }
   .nav__toggle { display: block; }
 
+  /* Mobile nav dropdown - inline, no popup */
+  .nav__dropdown {
+    width: 100%;
+  }
+  .nav__dropdown-toggle {
+    width: 100%;
+    text-align: left;
+  }
+  .nav__dropdown-menu {
+    position: static;
+    transform: none;
+    background: transparent;
+    box-shadow: none;
+    min-width: 0;
+    padding: 4px 0 0 16px;
+  }
+  .nav__dropdown-menu::before {
+    display: none;
+  }
+  .nav__dropdown-menu a {
+    color: rgba(255,255,255,0.7) !important;
+    padding: 8px 0;
+    font-size: 0.8rem;
+  }
+  .nav__dropdown-menu a:hover {
+    background: transparent;
+    color: var(--white) !important;
+  }
+  .nav__dropdown.is-open .nav__dropdown-menu {
+    display: block;
+  }
+
   /* Mobile nav sponsor */
   .nav__links.open .nav__sponsor {
     border-left: none;
@@ -1423,6 +1545,85 @@ p:last-child { margin-bottom: 0; }
 /* ===================== */
 /* WIZARD                */
 /* ===================== */
+
+/* --- Gallery Grid --- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--warm-gray);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item--wide {
+  grid-column: span 2;
+}
+
+.gallery-item--tall {
+  grid-row: span 2;
+}
+
+.gallery-item__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 16px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.6));
+  color: var(--white);
+  font-size: 0.82rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item__caption {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery-item--wide {
+    grid-column: span 2;
+  }
+  .gallery-item--tall {
+    grid-row: span 1;
+  }
+  .gallery-item__caption {
+    opacity: 1;
+    font-size: 0.78rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .gallery-item--wide {
+    grid-column: span 1;
+  }
+}
 
 .wizard {
   min-height: 100vh;
