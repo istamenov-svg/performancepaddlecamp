@@ -31,7 +31,7 @@
   --font-body: 'Source Sans 3', 'Segoe UI', Tahoma, sans-serif;
 
   --max-width: 1200px;
-  --nav-height: 76px;
+  --nav-height: 96px;
   --section-pad: 100px;
   --section-pad-mobile: 60px;
 
@@ -168,15 +168,38 @@ p:last-child { margin-bottom: 0; }
 }
 
 .nav__logo {
-  width: 52px;
-  height: 52px;
-  min-width: 52px;
-  max-width: 52px;
-  min-height: 52px;
-  max-height: 52px;
+  width: 68px;
+  height: 68px;
+  min-width: 68px;
+  max-width: 68px;
+  min-height: 68px;
+  max-height: 68px;
   object-fit: contain;
   flex-shrink: 0;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+/* Sponsor in nav */
+.nav__sponsor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 16px;
+  padding-left: 16px;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  flex-shrink: 0;
+}
+
+.nav__sponsor-img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.nav__sponsor:hover .nav__sponsor-img {
+  opacity: 1;
 }
 
 /* --- Hero Logo --- */
