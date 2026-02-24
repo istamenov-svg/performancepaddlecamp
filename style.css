@@ -5,7 +5,7 @@
    ============================================ */
 
 /* --- Google Fonts Import --- */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+/* Fonts loaded via <link> in HTML for performance */
 
 /* --- CSS Variables --- */
 :root {
@@ -56,7 +56,7 @@ body {
   font-size: 17px;
   line-height: 1.7;
   color: var(--text-body);
-  background: var(--white);
+  background: var(--navy-deep);
   overflow-x: hidden;
 }
 
@@ -109,6 +109,7 @@ p:last-child { margin-bottom: 0; }
 
 .section {
   padding: var(--section-pad) 0;
+  background: var(--white);
 }
 
 .section--navy {
@@ -771,6 +772,8 @@ p:last-child { margin-bottom: 0; }
   letter-spacing: 0.1em;
   padding: 5px 14px;
   border-radius: 20px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .badge--open {
@@ -839,6 +842,19 @@ p:last-child { margin-bottom: 0; }
   font-size: 3rem;
   color: var(--mid-gray);
   background: var(--off-white);
+}
+
+/* Real coach photos - circular crop, face centered */
+.coach__photo-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  margin: 0 auto;
+  display: block;
+  border: 3px solid var(--warm-gray);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
 }
 
 .coach h3 { margin-bottom: 6px; }
@@ -1166,21 +1182,88 @@ p:last-child { margin-bottom: 0; }
   margin-right: auto;
 }
 
+/* Coaches preview photo */
+.coaches-preview__photo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+/* Coaches preview logo */
+.coaches-preview__logo {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.2));
+}
+
+/* Coach grid: reverse layout (bio left, photo right on desktop; photo top on mobile) */
+.coach-grid--reverse {
+  direction: rtl;
+}
+.coach-grid--reverse > * {
+  direction: ltr;
+}
+
+/* Session cards (mobile layout) */
+.session-cards {
+  display: none;
+}
+
+.session-card {
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.session-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.session-card__header h4 {
+  margin: 0;
+}
+
+.session-card__date {
+  font-size: 1rem;
+  color: var(--text-body);
+  margin-bottom: 4px;
+}
+
+.session-card__courts {
+  font-size: 0.88rem;
+  color: rgba(0,0,0,0.45);
+  margin-bottom: 16px;
+}
+
 /* --- Responsive --- */
 @media (max-width: 1024px) {
   .grid-3 { grid-template-columns: 1fr 1fr; }
   .grid-4 { grid-template-columns: 1fr 1fr; }
   .footer__inner { grid-template-columns: 1fr 1fr; }
+  .nav__links { gap: 20px; }
 }
 
 @media (max-width: 768px) {
   :root {
     --section-pad: 60px;
-    --nav-height: 64px;
+    --nav-height: 76px;
   }
 
   body { font-size: 16px; }
 
+  /* Mobile nav */
   .nav__links { display: none; }
   .nav__links.open {
     display: flex;
@@ -1193,12 +1276,59 @@ p:last-child { margin-bottom: 0; }
     padding: 20px 28px 28px;
     gap: 16px;
     border-bottom: 1px solid rgba(255,255,255,0.08);
+    z-index: 100;
   }
   .nav__toggle { display: block; }
 
+  /* Mobile nav sponsor */
+  .nav__links.open .nav__sponsor {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav__logo {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    max-width: 52px !important;
+    min-height: 52px !important;
+    max-height: 52px !important;
+  }
+
+  .nav__brand-lines {
+    font-size: 0.9rem;
+  }
+
+  .nav__brand-line1,
+  .nav__brand-line2 {
+    font-size: 0.9rem !important;
+  }
+
+  /* Hero */
   .hero { min-height: 80vh; }
   .hero--short { min-height: 40vh; }
 
+  /* Center paddle in hero on mobile */
+  .hero__bg {
+    background-position: 65% center !important;
+  }
+
+  .hero__content h1 {
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
+  }
+
+  /* Photo hero mobile */
+  .hero--photo .hero__content {
+    padding: 0 20px;
+  }
+  .hero--photo .hero__content h1 {
+    font-size: clamp(1.3rem, 4.5vw, 2rem);
+  }
+
+  /* Grids */
   .grid-2, .grid-3, .grid-4 {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -1209,24 +1339,76 @@ p:last-child { margin-bottom: 0; }
     gap: 28px;
   }
 
+  /* Footer */
   .footer__inner { grid-template-columns: 1fr; gap: 32px; }
   .footer__bottom { flex-direction: column; text-align: center; }
 
-  .sessions-table { font-size: 0.9rem; }
   .sessions-table th, .sessions-table td { padding: 14px 12px; }
 
+  /* Session cards: show on mobile, hide table */
+  .sessions-table--desktop { display: none !important; }
+  .session-cards { display: flex !important; flex-direction: column; gap: 16px; }
+
+  /* Buttons */
   .btn-group { flex-direction: column; align-items: stretch; }
 
   .service-block { min-height: 280px; padding: 32px 28px; }
 
   .testimonial { padding: 28px; }
+
+  /* Section photo */
+  .section--photo {
+    background-attachment: scroll;
+  }
+
+  /* Wizard mobile */
+  .wizard__container {
+    padding: 32px 16px 60px;
+  }
+  .wizard__card-grid {
+    grid-template-columns: 1fr;
+  }
+  .wizard__radio-group {
+    grid-template-columns: 1fr;
+  }
+  .wizard__row {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
+  :root {
+    --section-pad: 40px;
+    --nav-height: 72px;
+  }
+
   .hero__proof { flex-direction: column; gap: 8px; }
-  .hero__content { padding: 40px 20px; }
+  .hero__content { padding: 40px 16px; }
   .checkbox-group { flex-direction: column; }
   .sessions-table .session-name { font-size: 1rem; }
+
+  .hero--photo .hero__content h1 {
+    font-size: 1.2rem;
+  }
+  .hero--photo .hero__content .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .nav__brand-lines {
+    display: none;
+  }
+
+  /* Wizard attendee rows stack */
+  .wizard__attendee-row {
+    flex-wrap: wrap;
+  }
+  .wizard__attendee-row .form-group {
+    flex: 1 1 100%;
+  }
+
+  /* Footer tighter */
+  .footer { padding: 40px 0 24px; }
+  .footer__links { gap: 8px; }
 }
 
 /* ===================== */
@@ -1549,24 +1731,4 @@ p:last-child { margin-bottom: 0; }
   font-size: 0.72rem;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .wizard__card-grid {
-    grid-template-columns: 1fr;
-  }
-  .wizard__radio-group {
-    grid-template-columns: 1fr;
-  }
-  .wizard__row {
-    grid-template-columns: 1fr;
-  }
-  .wizard__attendee-row {
-    flex-wrap: wrap;
-  }
-  .wizard__attendee-row .form-group {
-    min-width: calc(50% - 28px);
-  }
-  .wizard__container {
-    padding: 32px 16px 60px;
-  }
-}
+/* Responsive wizard handled in main responsive block above */
