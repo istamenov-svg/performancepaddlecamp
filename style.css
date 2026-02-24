@@ -338,7 +338,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .hero--short {
-  min-height: 50vh;
+  min-height: 62vh;
 }
 
 /* Photo hero - preserves image natural aspect ratio */
@@ -1313,7 +1313,7 @@ p:last-child { margin-bottom: 0; }
 
   /* Hero */
   .hero { min-height: 80vh; }
-  .hero--short { min-height: 40vh; }
+  .hero--short { min-height: 50vh; }
 
   .hero__content h1 {
     font-size: clamp(1.6rem, 5vw, 2.4rem);
