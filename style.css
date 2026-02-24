@@ -381,8 +381,13 @@ p:last-child { margin-bottom: 0; }
   inset: 0;
   background-size: cover;
   background-position: right center;
-  background-attachment: fixed;
   opacity: 0.55;
+}
+
+@media (min-width: 1025px) {
+  .hero__bg {
+    background-attachment: fixed;
+  }
 }
 
 .hero__overlay {
@@ -1366,10 +1371,6 @@ p:last-child { margin-bottom: 0; }
 
   /* Section photo */
   .section--photo {
-    background-attachment: scroll;
-  }
-
-  .hero__bg {
     background-attachment: scroll;
   }
 
