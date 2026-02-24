@@ -181,12 +181,14 @@ p:last-child { margin-bottom: 0; }
 
 /* --- Hero Logo --- */
 .hero__logo {
-  width: 320px;
-  height: 320px;
-  max-width: 320px;
-  max-height: 320px;
+  width: 280px;
+  height: 280px;
+  max-width: 280px;
+  max-height: 280px;
   object-fit: contain;
   flex-shrink: 0;
+  margin: 0 auto 32px;
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -283,21 +285,22 @@ p:last-child { margin-bottom: 0; }
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.45;
+  opacity: 0.55;
 }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15,23,32,0.7) 0%, rgba(15,23,32,0.88) 100%);
+  background: 
+    radial-gradient(ellipse 70% 100% at 40% 50%, rgba(15,23,32,0.88) 0%, rgba(15,23,32,0.6) 100%);
 }
 
 .hero__content {
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 820px;
-  padding: 60px 28px;
+  max-width: 700px;
+  padding: 40px 28px 60px;
 }
 
 /* Split hero layout - text left, logo right */
