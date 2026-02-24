@@ -1401,10 +1401,6 @@ p:last-child { margin-bottom: 0; }
     font-size: 0.85rem;
   }
 
-  .nav__brand-lines {
-    display: none;
-  }
-
   /* Wizard attendee rows stack */
   .wizard__attendee-row {
     flex-wrap: wrap;
