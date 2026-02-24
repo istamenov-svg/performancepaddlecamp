@@ -31,7 +31,7 @@
   --font-body: 'Source Sans 3', 'Segoe UI', Tahoma, sans-serif;
 
   --max-width: 1200px;
-  --nav-height: 72px;
+  --nav-height: 76px;
   --section-pad: 100px;
   --section-pad-mobile: 60px;
 
@@ -159,32 +159,43 @@ p:last-child { margin-bottom: 0; }
   gap: 12px;
 }
 
+.nav__brand-text {
+  display: inline;
+}
+
 .nav__brand span {
   color: var(--sand);
 }
 
 .nav__logo {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  max-width: 52px;
+  min-height: 52px;
+  max-height: 52px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
 /* --- Hero Logo --- */
 .hero__logo {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 260px;
+  height: 260px;
+  max-width: 260px;
+  max-height: 260px;
+  object-fit: contain;
   margin: 0 auto 28px;
-  border: 3px solid rgba(201,169,110,0.3);
-  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+  filter: drop-shadow(0 12px 32px rgba(0,0,0,0.5)) drop-shadow(0 4px 12px rgba(0,0,0,0.3));
 }
 
 @media (max-width: 768px) {
   .hero__logo {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
+    max-width: 180px;
+    max-height: 180px;
   }
 }
 
@@ -192,9 +203,11 @@ p:last-child { margin-bottom: 0; }
 .footer__logo {
   width: 72px;
   height: 72px;
-  border-radius: 50%;
-  object-fit: cover;
+  max-width: 72px;
+  max-height: 72px;
+  object-fit: contain;
   margin-bottom: 16px;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
 }
 
 .nav__links {
