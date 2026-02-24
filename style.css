@@ -381,6 +381,7 @@ p:last-child { margin-bottom: 0; }
   inset: 0;
   background-size: cover;
   background-position: right center;
+  background-attachment: fixed;
   opacity: 0.55;
 }
 
