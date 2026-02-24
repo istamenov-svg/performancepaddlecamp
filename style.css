@@ -1369,6 +1369,10 @@ p:last-child { margin-bottom: 0; }
     background-attachment: scroll;
   }
 
+  .hero__bg {
+    background-attachment: scroll;
+  }
+
   /* Wizard mobile */
   .wizard__container {
     padding: 32px 16px 60px;
