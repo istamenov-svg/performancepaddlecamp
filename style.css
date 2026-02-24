@@ -15,8 +15,10 @@
   --sand: #c9a96e;
   --sand-light: #e8d5a8;
   --sand-muted: #b89a5a;
+  --sand-dark: #8c7440;
   --white: #ffffff;
   --off-white: #f8f6f1;
+  --cream: #f5f1ea;
   --warm-gray: #e8e4dd;
   --mid-gray: #8a8578;
   --text-dark: #1a2332;
@@ -49,6 +51,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--navy-deep);
 }
 
 body {
@@ -377,7 +380,7 @@ p:last-child { margin-bottom: 0; }
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: right center;
   opacity: 0.55;
 }
 
@@ -1311,11 +1314,6 @@ p:last-child { margin-bottom: 0; }
   .hero { min-height: 80vh; }
   .hero--short { min-height: 40vh; }
 
-  /* Center paddle in hero on mobile */
-  .hero__bg {
-    background-position: 65% center !important;
-  }
-
   .hero__content h1 {
     font-size: clamp(1.6rem, 5vw, 2.4rem);
   }
@@ -1326,6 +1324,15 @@ p:last-child { margin-bottom: 0; }
   }
   .hero--photo .hero__content h1 {
     font-size: clamp(1.3rem, 4.5vw, 2rem);
+  }
+
+  /* Coaches preview center on mobile */
+  #coaches-preview .grid-2 > div:first-child {
+    text-align: center;
+  }
+  #coaches-preview .divider {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Grids */
@@ -1447,7 +1454,7 @@ p:last-child { margin-bottom: 0; }
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(0,0,0,0.4);
+  color: var(--text-light);
   margin-bottom: 40px;
 }
 
@@ -1455,12 +1462,18 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 32px;
 }
 
+.wizard__step-header .eyebrow {
+  color: var(--sand-muted);
+}
+
 .wizard__step-header h2 {
   margin-bottom: 8px;
+  color: var(--text-dark);
 }
 
 .wizard__step-header .subtitle {
   margin: 0;
+  color: var(--text-light);
 }
 
 /* Session cards */
@@ -1473,6 +1486,7 @@ p:last-child { margin-bottom: 0; }
 
 .wizard__session-card {
   cursor: pointer;
+  display: flex;
 }
 
 .wizard__session-card input {
@@ -1485,6 +1499,9 @@ p:last-child { margin-bottom: 0; }
   padding: 24px;
   background: var(--white);
   transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .wizard__session-card-inner h4 {
@@ -1570,6 +1587,7 @@ p:last-child { margin-bottom: 0; }
   cursor: pointer;
   font-size: 0.95rem;
   white-space: nowrap;
+  color: var(--text-dark);
 }
 
 /* Form fields inside wizard */
