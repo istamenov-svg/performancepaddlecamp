@@ -1331,10 +1331,12 @@ p:last-child { margin-bottom: 0; }
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin-top: 8px;
+  align-items: stretch;
 }
 
 .wizard__radio-card {
   cursor: pointer;
+  display: flex;
 }
 
 .wizard__radio-card input {
@@ -1347,6 +1349,10 @@ p:last-child { margin-bottom: 0; }
   padding: 20px;
   background: var(--white);
   transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .wizard__radio-card-inner h4 {
@@ -1381,6 +1387,7 @@ p:last-child { margin-bottom: 0; }
   gap: 8px;
   cursor: pointer;
   font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 /* Form fields inside wizard */
