@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nantucket Sessions — Performance Paddle Camp</title>
+  <meta name="description" content="2025 Nantucket platform tennis camp sessions. September 9–17 on Nantucket Island. 8 courts per session. Inquire about availability and pricing.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏓</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Performance <span>Paddle</span> Camp</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links">
+        <a href="camp.html">The Camp</a>
+        <a href="sessions.html">Sessions</a>
+        <a href="club.html">Your Club</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="results.html">Results</a>
+        <a href="faq.html">FAQ</a>
+        <a href="sessions.html" class="nav__cta">Inquire Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero hero--short">
+    <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=80');"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <span class="eyebrow">September 2025 · Nantucket Island</span>
+      <h1>Camp Sessions</h1>
+      <p class="subtitle">Four sessions. Eight courts per session. Limited availability.</p>
+    </div>
+  </header>
+
+  <!-- Session Schedule -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-lg fade-in">
+        <h2>2025 Session Schedule</h2>
+        <p class="subtitle mx-auto">Each session runs three days. Courts are booked by a team captain at a fixed price per court, regardless of team size.</p>
+      </div>
+      <div class="fade-in" style="max-width: 860px; margin: 0 auto;">
+        <table class="sessions-table">
+          <thead>
+            <tr>
+              <th>Session</th>
+              <th>Dates</th>
+              <th>Courts</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="session-name">Session 1</td>
+              <td class="session-dates">September 9 – 11, 2025</td>
+              <td>8 courts</td>
+              <td><span class="badge badge--open">Courts Available</span></td>
+            </tr>
+            <tr>
+              <td class="session-name">Session 2</td>
+              <td class="session-dates">September 11 – 13, 2025</td>
+              <td>8 courts</td>
+              <td><span class="badge badge--open">Courts Available</span></td>
+            </tr>
+            <tr>
+              <td class="session-name">Session 3</td>
+              <td class="session-dates">September 13 – 15, 2025</td>
+              <td>8 courts</td>
+              <td><span class="badge badge--open">Courts Available</span></td>
+            </tr>
+            <tr>
+              <td class="session-name">Session 4</td>
+              <td class="session-dates">September 15 – 17, 2025</td>
+              <td>8 courts</td>
+              <td><span class="badge badge--open">Courts Available</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Booking Works -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="text-center mb-lg fade-in">
+        <span class="eyebrow">How It Works</span>
+        <h2>Booking Your Court</h2>
+      </div>
+      <div class="steps fade-in" style="max-width: 900px; margin: 0 auto;">
+        <div class="step">
+          <h4>Submit an Inquiry</h4>
+          <p>Use the form below. Select your preferred session(s) and tell us about your group.</p>
+        </div>
+        <div class="step">
+          <h4>We Confirm Availability</h4>
+          <p>We'll respond with availability and share pricing details with you directly.</p>
+        </div>
+        <div class="step">
+          <h4>Secure Your Court</h4>
+          <p>Complete payment to lock in your court. Your spot is confirmed once payment is received.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inquiry Form -->
+  <section class="section" id="inquiry">
+    <div class="container">
+      <div class="text-center mb-lg fade-in">
+        <span class="eyebrow">Reserve Your Spot</span>
+        <h2>Session Inquiry</h2>
+        <p class="subtitle mx-auto">Fill out the form below and we'll follow up with availability and pricing.</p>
+      </div>
+      <div class="form-section fade-in">
+        <!-- IMPORTANT: Replace YOUR_FORMSPREE_ID with actual Formspree form ID -->
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <input type="hidden" name="_subject" value="New Nantucket Session Inquiry">
+          <input type="hidden" name="_next" value="thank-you.html">
+
+          <div class="form-group">
+            <label for="captain-name">Team Captain Name *</label>
+            <input type="text" id="captain-name" name="captain_name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label>Preferred Session(s) *</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="sessions" value="Session 1 (Sept 9-11)"><span>Session 1 (Sept 9–11)</span></label>
+              <label><input type="checkbox" name="sessions" value="Session 2 (Sept 11-13)"><span>Session 2 (Sept 11–13)</span></label>
+              <label><input type="checkbox" name="sessions" value="Session 3 (Sept 13-15)"><span>Session 3 (Sept 13–15)</span></label>
+              <label><input type="checkbox" name="sessions" value="Session 4 (Sept 15-17)"><span>Session 4 (Sept 15–17)</span></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="group-size">Number of Players in Your Group</label>
+            <select id="group-size" name="group_size">
+              <option value="">Select...</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8+">8+</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="skill-level">Approximate Skill Level</label>
+            <select id="skill-level" name="skill_level">
+              <option value="">Select...</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+              <option value="Mixed levels">Mixed levels</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="referral">How Did You Hear About Us?</label>
+            <select id="referral" name="referral_source">
+              <option value="">Select...</option>
+              <option value="Returning camper">Returning Camper</option>
+              <option value="Friend / Referral">Friend / Referral</option>
+              <option value="Web search">Web Search</option>
+              <option value="Social media">Social Media</option>
+              <option value="Club pro">Club Pro</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message / Questions (optional)</label>
+            <textarea id="message" name="message" placeholder="Anything else we should know about your group?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width: 100%; margin-top: 8px;">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included -->
+  <section class="section section--navy">
+    <div class="container">
+      <div class="grid-2 fade-in" style="align-items: center;">
+        <div>
+          <span class="eyebrow" style="color: var(--sand-light);">What's Included</span>
+          <h2 style="color: var(--white);">Everything You Need for Three Days of Championship-Level Instruction</h2>
+        </div>
+        <div style="color: rgba(255,255,255,0.75);">
+          <p>✓ &nbsp;Multi-day on-court instruction from APTA Hall of Famers and national champions</p>
+          <p>✓ &nbsp;Low coach-to-player ratio for personalized feedback</p>
+          <p>✓ &nbsp;Morning drills + afternoon coached match play format</p>
+          <p>✓ &nbsp;Camp materials and season reference guide</p>
+          <p>✓ &nbsp;Social events and pro exhibition</p>
+          <p>✓ &nbsp;Fresh curriculum every season — returning campers always get new material</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cancellation Policy -->
+  <section class="section">
+    <div class="container text-center fade-in max-w-prose mx-auto">
+      <h3>Cancellation Policy</h3>
+      <div class="divider divider--center mt-sm mb-md"></div>
+      <p>100% refund before June 1. 50% refund between June 1 and June 30. No refunds after July 1. Court spots may be transferred to another captain at no additional cost — contact us to arrange.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__brand">Performance <span>Paddle</span> Camp</p>
+          <p>The longest-running platform tennis camp in America. Founded 1997. Led by APTA Hall of Famers Mike Gillespie and Ana Brzova.</p>
+          <p class="mt-sm" style="color: rgba(255,255,255,0.4);">Email: <a href="mailto:info@performancepaddlecamp.com" style="color: var(--sand-light);">info@performancepaddlecamp.com</a></p>
+        </div>
+        <div class="footer__links">
+          <h4>Camp</h4>
+          <a href="camp.html">The Camp</a>
+          <a href="sessions.html">Nantucket Sessions</a>
+          <a href="club.html">Bring Camp to Your Club</a>
+          <a href="coaches.html">Meet the Coaches</a>
+        </div>
+        <div class="footer__links">
+          <h4>More</h4>
+          <a href="results.html">Results & Testimonials</a>
+          <a href="nantucket.html">The Nantucket Experience</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Performance Paddle Camp. All rights reserved.</p>
+        <p class="footer__policy">Cancellation Policy: 100% refund before June 1 · 50% refund June 1–30 · No refunds after July 1</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
