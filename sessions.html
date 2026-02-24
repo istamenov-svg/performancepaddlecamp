@@ -80,6 +80,7 @@
               <th>Dates</th>
               <th>Courts</th>
               <th>Availability</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -88,115 +89,31 @@
               <td class="session-dates">September 8 – 10, 2026</td>
               <td>8 courts</td>
               <td><span class="badge badge--open">Courts Available</span></td>
+              <td><a href="inquiry.html?session=1" class="btn btn--primary btn--sm">Inquire</a></td>
             </tr>
             <tr>
               <td class="session-name">Session 2</td>
               <td class="session-dates">September 10 – 12, 2026</td>
               <td>8 courts</td>
               <td><span class="badge badge--open">Courts Available</span></td>
+              <td><a href="inquiry.html?session=2" class="btn btn--primary btn--sm">Inquire</a></td>
             </tr>
             <tr>
               <td class="session-name">Session 3</td>
               <td class="session-dates">September 12 – 14, 2026</td>
               <td>8 courts</td>
               <td><span class="badge badge--open">Courts Available</span></td>
+              <td><a href="inquiry.html?session=3" class="btn btn--primary btn--sm">Inquire</a></td>
             </tr>
             <tr>
               <td class="session-name">Session 4</td>
               <td class="session-dates">September 14 – 16, 2026</td>
               <td>8 courts</td>
               <td><span class="badge badge--open">Courts Available</span></td>
+              <td><a href="inquiry.html?session=4" class="btn btn--primary btn--sm">Inquire</a></td>
             </tr>
           </tbody>
         </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- Inquiry Form -->
-  <section class="section" id="inquiry">
-    <div class="container">
-      <div class="text-center mb-lg fade-in">
-        <span class="eyebrow">Reserve Your Spot</span>
-        <h2>Session Inquiry</h2>
-        <p class="subtitle mx-auto">Fill out the form below and we'll follow up with availability and pricing.</p>
-      </div>
-      <div class="form-section fade-in">
-        <!-- IMPORTANT: Replace YOUR_FORMSPREE_ID with actual Formspree form ID -->
-        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-          <input type="hidden" name="_subject" value="New Nantucket Session Inquiry">
-          <input type="hidden" name="_next" value="thank-you.html">
-
-          <div class="form-group">
-            <label for="captain-name">Team Captain Name *</label>
-            <input type="text" id="captain-name" name="captain_name" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone *</label>
-            <input type="tel" id="phone" name="phone" required>
-          </div>
-
-          <div class="form-group">
-            <label>Preferred Session(s) *</label>
-            <div class="checkbox-group">
-              <label><input type="checkbox" name="sessions" value="Session 1 (Sept 9-11)"><span>Session 1 (Sept 9–11)</span></label>
-              <label><input type="checkbox" name="sessions" value="Session 2 (Sept 11-13)"><span>Session 2 (Sept 11–13)</span></label>
-              <label><input type="checkbox" name="sessions" value="Session 3 (Sept 13-15)"><span>Session 3 (Sept 13–15)</span></label>
-              <label><input type="checkbox" name="sessions" value="Session 4 (Sept 15-17)"><span>Session 4 (Sept 15–17)</span></label>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="group-size">Number of Players in Your Group</label>
-            <select id="group-size" name="group_size">
-              <option value="">Select...</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8+">8+</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="skill-level">Approximate Skill Level</label>
-            <select id="skill-level" name="skill_level">
-              <option value="">Select...</option>
-              <option value="Beginner">Beginner</option>
-              <option value="Intermediate">Intermediate</option>
-              <option value="Advanced">Advanced</option>
-              <option value="Mixed levels">Mixed levels</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="referral">How Did You Hear About Us?</label>
-            <select id="referral" name="referral_source">
-              <option value="">Select...</option>
-              <option value="Returning camper">Returning Camper</option>
-              <option value="Friend / Referral">Friend / Referral</option>
-              <option value="Web search">Web Search</option>
-              <option value="Social media">Social Media</option>
-              <option value="Club pro">Club Pro</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message / Questions (optional)</label>
-            <textarea id="message" name="message" placeholder="Anything else we should know about your group?"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn--primary" style="width: 100%; margin-top: 8px;">Submit Inquiry</button>
-        </form>
       </div>
     </div>
   </section>
