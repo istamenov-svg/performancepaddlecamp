@@ -167,6 +167,26 @@ p:last-child { margin-bottom: 0; }
   color: var(--sand);
 }
 
+.nav__brand-lines {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.nav__brand-line1 {
+  font-size: 1.05rem;
+  color: var(--white);
+}
+
+.nav__brand-line2 {
+  font-size: 1.05rem;
+  color: var(--white);
+}
+
+.nav__brand-line2 span {
+  color: var(--sand);
+}
+
 .nav__logo {
   width: 68px;
   height: 68px;
