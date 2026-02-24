@@ -283,13 +283,13 @@ p:last-child { margin-bottom: 0; }
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.3;
+  opacity: 0.45;
 }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15,23,32,0.5) 0%, rgba(15,23,32,0.85) 100%);
+  background: linear-gradient(180deg, rgba(15,23,32,0.7) 0%, rgba(15,23,32,0.88) 100%);
 }
 
 .hero__content {
@@ -307,16 +307,16 @@ p:last-child { margin-bottom: 0; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 48px;
+  gap: 60px;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 60px 28px;
+  padding: 80px 28px;
   width: 100%;
 }
 
 .hero__split-text {
   text-align: left;
-  flex: 1;
+  flex: 1 1 0;
   min-width: 0;
 }
 
@@ -339,6 +339,10 @@ p:last-child { margin-bottom: 0; }
   justify-content: flex-start;
 }
 
+.hero__split .hero__logo {
+  flex: 0 0 320px;
+}
+
 @media (max-width: 768px) {
   .hero__split {
     flex-direction: column-reverse;
@@ -354,6 +358,9 @@ p:last-child { margin-bottom: 0; }
   }
   .hero__split-text .hero__proof {
     justify-content: center;
+  }
+  .hero__split .hero__logo {
+    flex: 0 0 200px;
   }
 }
 
