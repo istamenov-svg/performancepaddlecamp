@@ -181,13 +181,13 @@ p:last-child { margin-bottom: 0; }
 
 /* --- Hero Logo --- */
 .hero__logo {
-  width: 280px;
-  height: 280px;
-  max-width: 280px;
-  max-height: 280px;
+  width: 252px;
+  height: 252px;
+  max-width: 252px;
+  max-height: 252px;
   object-fit: contain;
   flex-shrink: 0;
-  margin: 0 auto 32px;
+  margin: 0 auto 12px;
   display: block;
 }
 
@@ -309,7 +309,13 @@ p:last-child { margin-bottom: 0; }
   position: relative;
   z-index: 2;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 32px;
+}
+
+.hero__center-logo .eyebrow {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .hero__left-content {
@@ -318,7 +324,7 @@ p:last-child { margin-bottom: 0; }
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 24px 28px 60px;
+  padding: 16px 28px 48px;
   text-align: left;
 }
 
@@ -329,6 +335,7 @@ p:last-child { margin-bottom: 0; }
 .hero__left-content h1 {
   color: var(--white);
   margin-bottom: 20px;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
 }
 
 .hero__left-content .eyebrow {
