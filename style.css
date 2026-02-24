@@ -925,8 +925,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 .coach__photo {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto 20px;
@@ -938,8 +938,10 @@ p:last-child { margin-bottom: 0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
-  color: var(--mid-gray);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--sand);
   background: var(--off-white);
 }
 
@@ -954,6 +956,12 @@ p:last-child { margin-bottom: 0; }
   display: block;
   border: 3px solid var(--warm-gray);
   box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+}
+
+.coach__photo-img--staff {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
 }
 
 .coach h3 { margin-bottom: 6px; }
