@@ -47,13 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Nav Background on Scroll ---
+  // --- Nav Shadow on Scroll ---
   const nav = document.querySelector('.nav');
   if (nav) {
     window.addEventListener('scroll', () => {
-      nav.style.background = window.scrollY > 40
-        ? 'rgba(15,23,32,0.97)'
-        : 'rgba(15,23,32,1)';
+      if (window.scrollY > 40) {
+        nav.style.boxShadow = '0 2px 12px rgba(0,0,0,0.1)';
+      } else {
+        nav.style.boxShadow = '0 1px 4px rgba(0,0,0,0.06)';
+      }
     }, { passive: true });
   }
 
@@ -65,10 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdown.classList.toggle('is-open');
     });
   });
+
   // Close dropdown on outside click
   document.addEventListener('click', () => {
     document.querySelectorAll('.nav__dropdown.is-open').forEach(d => d.classList.remove('is-open'));
   });
+
   // Stop clicks inside dropdown from closing it
   document.querySelectorAll('.nav__dropdown-menu').forEach(menu => {
     menu.addEventListener('click', (e) => e.stopPropagation());
@@ -77,16 +81,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Active Nav Link ---
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const dropdownPages = ['gallery.html', 'results.html', 'faq.html'];
+
   document.querySelectorAll('.nav__links a').forEach(a => {
     const href = a.getAttribute('href');
     if (href === currentPage || (currentPage === '' && href === 'index.html')) {
       a.classList.add('active');
     }
   });
+
   // Highlight dropdown toggle when on a dropdown page
   if (dropdownPages.includes(currentPage)) {
     document.querySelectorAll('.nav__dropdown-toggle').forEach(btn => {
-      btn.style.color = 'var(--white)';
+      btn.style.color = 'var(--navy-deep)';
     });
   }
 

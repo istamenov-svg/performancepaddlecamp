@@ -159,7 +159,6 @@ p:last-child { margin-bottom: 0; }
   gap: 12px;
 }
 .nav__brand-text { display: inline; }
-.nav__brand span { color: var(--sand-muted); }
 .nav__brand-lines {
   display: flex;
   flex-direction: column;
@@ -167,7 +166,7 @@ p:last-child { margin-bottom: 0; }
 }
 .nav__brand-line1 { font-size: 1.05rem; color: var(--navy-deep); }
 .nav__brand-line2 { font-size: 1.05rem; color: var(--navy-deep); }
-.nav__brand-line2 span { color: var(--sand-muted); }
+.nav__brand-line2 span { color: var(--navy-deep); }
 
 .nav__logo {
   width: 68px;
@@ -197,7 +196,7 @@ p:last-child { margin-bottom: 0; }
   object-fit: contain;
   opacity: 0.9;
   transition: opacity 0.2s;
-  filter: brightness(0) saturate(100%);
+  filter: brightness(0) saturate(100%) invert(7%) sepia(15%) saturate(2000%) hue-rotate(180deg);
 }
 .nav__sponsor:hover .nav__sponsor-img { opacity: 1; }
 
