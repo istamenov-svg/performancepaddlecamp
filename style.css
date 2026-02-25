@@ -633,6 +633,14 @@ p:last-child { margin-bottom: 0; }
   box-shadow: var(--shadow-sm);
   border: 1px solid rgba(0,0,0,0.04);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.card h4 {
+  min-height: 2.4em;
+}
+@media (max-width: 768px) {
+  .card h4 { min-height: auto; }
 }
 .card:hover {
   box-shadow: var(--shadow-md);
