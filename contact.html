@@ -26,91 +26,87 @@
 </head>
 <body>
 
-  <nav class="nav"><div class="nav__inner"><a href="index.html" class="nav__brand"><img src="logo.png" alt="Performance Paddle Camp" class="nav__logo" width="68" height="68"><span class="nav__brand-lines"><span class="nav__brand-line1">Performance</span><span class="nav__brand-line2"><span>Paddle</span> Camp</span></span></a><button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button><div class="nav__links"><a href="camp.html">The Camp</a><a href="sessions.html">Sessions</a><a href="club.html">Your Club</a><a href="coaches.html">Coaches</a><div class="nav__dropdown"><button class="nav__dropdown-toggle">Camp Life</button><div class="nav__dropdown-menu"><a href="gallery.html">Gallery</a><a href="results.html">Results &amp; Testimonials</a><a href="faq.html">FAQ</a></div></div><a href="sessions.html" class="nav__cta">Inquire Now</a>
-        <a href="https://xenonpaddle.com" target="_blank" rel="noopener" class="nav__sponsor"><img src="xenon-logo.png" alt="Xenon Paddle - Official Sponsor" class="nav__sponsor-img"></a></div></div></nav>
+<nav class="nav"><div class="nav__inner"><a href="index.html" class="nav__brand"><img src="logo.png" alt="Performance Paddle Camp" class="nav__logo" width="68" height="68"><span class="nav__brand-lines"><span class="nav__brand-line1">Performance</span><span class="nav__brand-line2"><span>Paddle</span> Camp</span></span></a><button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button><div class="nav__links"><a href="camp.html">The Camp</a><a href="sessions.html">Sessions</a><a href="club.html">Your Club</a><a href="coaches.html">Coaches</a><div class="nav__dropdown"><button class="nav__dropdown-toggle">Camp Life</button><div class="nav__dropdown-menu"><a href="gallery.html">Gallery</a><a href="results.html">Results &amp; Testimonials</a><a href="faq.html">FAQ</a></div></div><a href="sessions.html" class="nav__cta">Inquire Now</a> <a href="https://xenonpaddle.com" target="_blank" rel="noopener" class="nav__sponsor"><img src="xenon-logo.png" alt="Xenon Paddle - Official Sponsor" class="nav__sponsor-img"></a></div></div></nav>
 
-  <header class="hero hero--short">
-    <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=80');"></div>
-    <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <span class="eyebrow">Get in Touch</span>
-      <h1>Contact Us</h1>
-    </div>
-  </header>
+<header class="hero hero--short" style="background: var(--navy-deep);">
+  <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=80');"></div>
+  <div class="hero__content">
+    <span class="eyebrow">Get in Touch</span>
+    <h1>Contact Us</h1>
+  </div>
+</header>
 
-  <section class="section">
-    <div class="container">
-      <div class="grid-2 fade-in" style="gap: 64px; align-items: start;">
+<section class="section">
+  <div class="container">
+    <div class="grid-2 fade-in" style="gap: 64px; align-items: start;">
+      <!-- Contact Info -->
+      <div>
+        <h2>We'd Love to Hear From You</h2>
+        <div class="divider"></div>
+        <p>Whether you have questions about Nantucket sessions, want to arrange a club visit, or just want to learn more about the system — reach out anytime.</p>
 
-        <!-- Contact Info -->
-        <div>
-          <h2>We'd Love to Hear From You</h2>
-          <div class="divider"></div>
-          <p>Whether you have questions about Nantucket sessions, want to arrange a club visit, or just want to learn more about the system — reach out anytime.</p>
-
-          <div class="mt-lg">
-            <h4>Email</h4>
-            <p><a href="mailto:info@performancepaddlecamp.com" style="color: var(--sand-muted); text-decoration: underline;">info@performancepaddlecamp.com</a></p>
-          </div>
-
-          <div class="mt-md">
-            <h4>Quick Links</h4>
-            <p><a href="sessions.html" style="color: var(--sand-muted); text-decoration: underline;">Inquire about Nantucket Sessions →</a></p>
-            <p><a href="club.html" style="color: var(--sand-muted); text-decoration: underline;">Request a Club Visit →</a></p>
-            <p><a href="faq.html" style="color: var(--sand-muted); text-decoration: underline;">Check the FAQ →</a></p>
-          </div>
-
-          <div class="mt-md">
-            <h4>Response Time</h4>
-            <p>We typically respond within 24–48 hours. During camp season (September), response times may be slightly longer.</p>
-          </div>
+        <div class="mt-lg">
+          <h4>Email</h4>
+          <p><a href="mailto:info@performancepaddlecamp.com" style="color: var(--sand-muted); text-decoration: underline;">info@performancepaddlecamp.com</a></p>
         </div>
 
-        <!-- General Contact Form -->
-        <div>
-          <h3 class="mb-md">Send a Message</h3>
-          <!-- IMPORTANT: Replace YOUR_FORMSPREE_ID with actual Formspree form ID -->
-          <form action="https://formspree.io/f/YOUR_FORMSPREE_ID_CONTACT" method="POST">
-            <input type="hidden" name="_subject" value="New Contact Form Message">
-            <input type="hidden" name="_next" value="thank-you.html">
-
-            <div class="form-group">
-              <label for="c-name">Name *</label>
-              <input type="text" id="c-name" name="name" required>
-            </div>
-
-            <div class="form-group">
-              <label for="c-email">Email *</label>
-              <input type="email" id="c-email" name="email" required>
-            </div>
-
-            <div class="form-group">
-              <label for="c-subject">Subject</label>
-              <select id="c-subject" name="subject">
-                <option value="">Select...</option>
-                <option value="Nantucket Sessions">Nantucket Sessions</option>
-                <option value="Club Visit">Club Visit Inquiry</option>
-                <option value="Coaching Staff">Coaching Staff Inquiry</option>
-                <option value="General Question">General Question</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="c-message">Message *</label>
-              <textarea id="c-message" name="message" required placeholder="How can we help?"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn--primary" style="width: 100%;">Send Message</button>
-          </form>
+        <div class="mt-md">
+          <h4>Quick Links</h4>
+          <p><a href="sessions.html" style="color: var(--sand-muted); text-decoration: underline;">Inquire about Nantucket Sessions →</a></p>
+          <p><a href="club.html" style="color: var(--sand-muted); text-decoration: underline;">Request a Club Visit →</a></p>
+          <p><a href="faq.html" style="color: var(--sand-muted); text-decoration: underline;">Check the FAQ →</a></p>
         </div>
 
+        <div class="mt-md">
+          <h4>Response Time</h4>
+          <p>We typically respond within 24–48 hours. During camp season (September), response times may be slightly longer.</p>
+        </div>
+      </div>
+
+      <!-- General Contact Form -->
+      <div>
+        <h3 class="mb-md">Send a Message</h3>
+        <!-- IMPORTANT: Replace YOUR_FORMSPREE_ID with actual Formspree form ID -->
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID_CONTACT" method="POST">
+          <input type="hidden" name="_subject" value="New Contact Form Message">
+          <input type="hidden" name="_next" value="thank-you.html">
+
+          <div class="form-group">
+            <label for="c-name">Name *</label>
+            <input type="text" id="c-name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="c-email">Email *</label>
+            <input type="email" id="c-email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="c-subject">Subject</label>
+            <select id="c-subject" name="subject">
+              <option value="">Select...</option>
+              <option value="Nantucket Sessions">Nantucket Sessions</option>
+              <option value="Club Visit">Club Visit Inquiry</option>
+              <option value="Coaching Staff">Coaching Staff Inquiry</option>
+              <option value="General Question">General Question</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="c-message">Message *</label>
+            <textarea id="c-message" name="message" required placeholder="How can we help?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width: 100%;">Send Message</button>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="footer"><div class="container"><div class="footer__inner"><div><img src="logo.png" alt="Performance Paddle Camp" class="footer__logo" width="72" height="72" loading="lazy"><p class="footer__brand">Performance <span>Paddle</span> Camp</p><p>The longest-running platform tennis camp in America. Founded 1997.</p><p class="mt-sm" style="color: rgba(255,255,255,0.4);">Email: <a href="mailto:info@performancepaddlecamp.com" style="color: var(--sand-light);">info@performancepaddlecamp.com</a></p></div><div class="footer__links"><h4>Camp</h4><a href="camp.html">The Camp</a><a href="sessions.html">Nantucket Sessions</a><a href="club.html">Bring Camp to Your Club</a><a href="coaches.html">Meet the Coaches</a></div><div class="footer__links"><h4>Camp Life</h4><a href="gallery.html">Gallery</a><a href="results.html">Results &amp; Testimonials</a><a href="nantucket.html">The Nantucket Experience</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div></div><div class="footer__bottom"><p>© 2026 Performance Paddle Camp. All rights reserved.</p><p class="footer__policy">Cancellation Policy: 100% refund before June 1 · 50% refund June 1–30 · No refunds after July 1</p></div></div></footer>
+<footer class="footer"><div class="container"><div class="footer__inner"><div><img src="logo.png" alt="Performance Paddle Camp" class="footer__logo" width="72" height="72" loading="lazy"><p class="footer__brand">Performance <span>Paddle</span> Camp</p><p>The longest-running platform tennis camp in America. Founded 1997.</p><p class="mt-sm" style="color: rgba(255,255,255,0.4);">Email: <a href="mailto:info@performancepaddlecamp.com" style="color: var(--sand-light);">info@performancepaddlecamp.com</a></p></div><div class="footer__links"><h4>Camp</h4><a href="camp.html">The Camp</a><a href="sessions.html">Nantucket Sessions</a><a href="club.html">Bring Camp to Your Club</a><a href="coaches.html">Meet the Coaches</a></div><div class="footer__links"><h4>Camp Life</h4><a href="gallery.html">Gallery</a><a href="results.html">Results &amp; Testimonials</a><a href="nantucket.html">The Nantucket Experience</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div></div><div class="footer__bottom"><p>© 2026 Performance Paddle Camp. All rights reserved.</p><p class="footer__policy">Cancellation Policy: 100% refund before June 1 · 50% refund June 1–30 · No refunds after July 1</p></div></div></footer>
 
-  <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
