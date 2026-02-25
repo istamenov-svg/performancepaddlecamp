@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Session Inquiry — Performance Paddle Camp</title>
+  <title>Session Inquiry &#8212; Performance Paddle Camp</title>
   <meta name="description" content="Inquire about 2026 Nantucket platform tennis camp sessions. Reserve your court for September on Nantucket Island.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,566 +13,576 @@
   <link rel="canonical" href="https://istamenov-svg.github.io/performancepaddlecamp/inquiry.html">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://istamenov-svg.github.io/performancepaddlecamp/inquiry.html">
-  <meta property="og:title" content="Inquire About Sessions — Performance Paddle Camp">
+  <meta property="og:title" content="Inquire About Sessions &#8212; Performance Paddle Camp">
   <meta property="og:description" content="Inquire about 2026 Nantucket platform tennis camp sessions. Reserve your court for September on Nantucket Island.">
   <meta property="og:image" content="https://istamenov-svg.github.io/performancepaddlecamp/logo.png">
   <meta property="og:site_name" content="Performance Paddle Camp">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Inquire About Sessions — Performance Paddle Camp">
+  <meta name="twitter:title" content="Inquire About Sessions &#8212; Performance Paddle Camp">
   <meta name="twitter:description" content="Inquire about 2026 Nantucket platform tennis camp sessions. Reserve your court for September on Nantucket Island.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0f1720">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏓</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127955;</text></svg>">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__brand"><img src="logo.png" alt="Performance Paddle Camp" class="nav__logo" width="68" height="68"><span class="nav__brand-lines"><span class="nav__brand-line1">Performance</span><span class="nav__brand-line2"><span>Paddle</span> Camp</span></span></a>
-      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav__links">
-        <a href="camp.html">The Camp</a>
-        <a href="sessions.html">Sessions</a>
-        <a href="club.html">Your Club</a>
-        <a href="coaches.html">Coaches</a>
-        <div class="nav__dropdown">
-          <button class="nav__dropdown-toggle">Camp Life</button>
-          <div class="nav__dropdown-menu">
-            <a href="gallery.html">Gallery</a>
-            <a href="results.html">Results &amp; Testimonials</a>
-            <a href="faq.html">FAQ</a>
-          </div>
+<!-- Navigation -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand"><img src="logo.png" alt="Performance Paddle Camp" class="nav__logo" width="68" height="68"><span class="nav__brand-lines"><span class="nav__brand-line1">Performance</span><span class="nav__brand-line2"><span>Paddle</span> Camp</span></span></a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__links">
+      <a href="camp.html">The Camp</a>
+      <a href="sessions.html">Sessions</a>
+      <a href="club.html">Your Club</a>
+      <a href="coaches.html">Coaches</a>
+      <div class="nav__dropdown">
+        <button class="nav__dropdown-toggle">Camp Life</button>
+        <div class="nav__dropdown-menu">
+          <a href="gallery.html">Gallery</a>
+          <a href="results.html">Results &amp; Testimonials</a>
+          <a href="faq.html">FAQ</a>
         </div>
-        <a href="sessions.html" class="nav__cta">Inquire Now</a>
-        <a href="https://xenonpaddle.com" target="_blank" rel="noopener" class="nav__sponsor"><img src="xenon-logo.png" alt="Xenon Paddle - Official Sponsor" class="nav__sponsor-img"></a>
+      </div>
+      <a href="sessions.html" class="nav__cta">Inquire Now</a>
+      <a href="https://xenonpaddle.com" target="_blank" rel="noopener" class="nav__sponsor"><img src="xenon-logo.png" alt="Xenon Paddle - Official Sponsor" class="nav__sponsor-img"></a>
+    </div>
+  </div>
+</nav>
+
+<!-- Wizard -->
+<main class="wizard" style="padding-top: var(--nav-height);">
+  <div class="wizard__container">
+
+    <!-- Progress Bar -->
+    <div class="wizard__progress">
+      <div class="wizard__progress-bar" id="progressBar"></div>
+    </div>
+    <div class="wizard__steps-label">
+      <span id="stepLabel">Step 1 of 5</span>
+    </div>
+
+    <!-- STEP 1: Session Selection -->
+    <div class="wizard__step" id="step1">
+      <div class="wizard__step-header">
+        <span class="eyebrow">Step 1</span>
+        <h2>Select Your Session(s)</h2>
+        <p class="subtitle">Choose one or more sessions you're interested in.</p>
+      </div>
+
+      <div class="wizard__card-grid">
+        <label class="wizard__session-card" data-session="1">
+          <input type="checkbox" name="session" value="1">
+          <div class="wizard__session-card-inner">
+            <h4>Session 1</h4>
+            <p>September 8 – 10, 2026</p>
+            <span class="badge badge--open">Courts Available</span>
+          </div>
+        </label>
+        <label class="wizard__session-card" data-session="2">
+          <input type="checkbox" name="session" value="2">
+          <div class="wizard__session-card-inner">
+            <h4>Session 2</h4>
+            <p>September 10 – 12, 2026</p>
+            <span class="badge badge--open">Courts Available</span>
+          </div>
+        </label>
+        <label class="wizard__session-card" data-session="3">
+          <input type="checkbox" name="session" value="3">
+          <div class="wizard__session-card-inner">
+            <h4>Session 3</h4>
+            <p>September 12 – 14, 2026</p>
+            <span class="badge badge--open">Courts Available</span>
+          </div>
+        </label>
+        <label class="wizard__session-card" data-session="4">
+          <input type="checkbox" name="session" value="4">
+          <div class="wizard__session-card-inner">
+            <h4>Session 4</h4>
+            <p>September 14 – 16, 2026</p>
+            <span class="badge badge--open">Courts Available</span>
+          </div>
+        </label>
+      </div>
+
+      <div class="wizard__nav">
+        <div></div>
+        <button class="btn btn--primary" id="next1">Continue</button>
       </div>
     </div>
-  </nav>
 
-  <!-- Wizard -->
-  <main class="wizard" style="padding-top: var(--nav-height);">
-    <div class="wizard__container">
-
-      <!-- Progress Bar -->
-      <div class="wizard__progress">
-        <div class="wizard__progress-bar" id="progressBar"></div>
-      </div>
-      <div class="wizard__steps-label">
-        <span id="stepLabel">Step 1 of 5</span>
+    <!-- STEP 2: About You -->
+    <div class="wizard__step" id="step2" style="display:none;">
+      <div class="wizard__step-header">
+        <span class="eyebrow">Step 2</span>
+        <h2>About You</h2>
+        <p class="subtitle">Tell us who's organizing this group.</p>
       </div>
 
-      <!-- STEP 1: Session Selection -->
-      <div class="wizard__step" id="step1">
-        <div class="wizard__step-header">
-          <span class="eyebrow">Step 1</span>
-          <h2>Select Your Session(s)</h2>
-          <p class="subtitle">Choose one or more sessions you're interested in.</p>
+      <div class="wizard__form-fields">
+        <div class="wizard__row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" required>
+          </div>
         </div>
-        <div class="wizard__card-grid">
-          <label class="wizard__session-card" data-session="1">
-            <input type="checkbox" name="session" value="1">
-            <div class="wizard__session-card-inner">
-              <h4>Session 1</h4>
-              <p>September 8 – 10, 2026</p>
-              <span class="badge badge--open">Courts Available</span>
-            </div>
-          </label>
-          <label class="wizard__session-card" data-session="2">
-            <input type="checkbox" name="session" value="2">
-            <div class="wizard__session-card-inner">
-              <h4>Session 2</h4>
-              <p>September 10 – 12, 2026</p>
-              <span class="badge badge--open">Courts Available</span>
-            </div>
-          </label>
-          <label class="wizard__session-card" data-session="3">
-            <input type="checkbox" name="session" value="3">
-            <div class="wizard__session-card-inner">
-              <h4>Session 3</h4>
-              <p>September 12 – 14, 2026</p>
-              <span class="badge badge--open">Courts Available</span>
-            </div>
-          </label>
-          <label class="wizard__session-card" data-session="4">
-            <input type="checkbox" name="session" value="4">
-            <div class="wizard__session-card-inner">
-              <h4>Session 4</h4>
-              <p>September 14 – 16, 2026</p>
-              <span class="badge badge--open">Courts Available</span>
-            </div>
-          </label>
+        <div class="form-group">
+          <label for="wizEmail">Email *</label>
+          <input type="email" id="wizEmail" required>
         </div>
-        <div class="wizard__nav">
-          <div></div>
-          <button class="btn btn--primary" id="next1">Continue</button>
+        <div class="form-group">
+          <label for="wizPhone">Phone *</label>
+          <input type="tel" id="wizPhone" required>
+        </div>
+        <div class="form-group">
+          <label for="wizClub">Club Affiliation <span style="color: rgba(0,0,0,0.4);">(optional)</span></label>
+          <input type="text" id="wizClub" placeholder="e.g. Westchester Country Club">
         </div>
       </div>
 
-      <!-- STEP 2: About You -->
-      <div class="wizard__step" id="step2" style="display:none;">
-        <div class="wizard__step-header">
-          <span class="eyebrow">Step 2</span>
-          <h2>About You</h2>
-          <p class="subtitle">Tell us who's organizing this group.</p>
-        </div>
-        <div class="wizard__form-fields">
-          <div class="wizard__row">
-            <div class="form-group">
-              <label for="firstName">First Name *</label>
-              <input type="text" id="firstName" required>
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name *</label>
-              <input type="text" id="lastName" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="wizEmail">Email *</label>
-            <input type="email" id="wizEmail" required>
-          </div>
-          <div class="form-group">
-            <label for="wizPhone">Phone *</label>
-            <input type="tel" id="wizPhone" required>
-          </div>
-          <div class="form-group">
-            <label for="wizClub">Club Affiliation <span style="color: rgba(0,0,0,0.4);">(optional)</span></label>
-            <input type="text" id="wizClub" placeholder="e.g. Westchester Country Club">
-          </div>
-        </div>
-        <div class="wizard__nav">
-          <button class="btn btn--outline" id="back2">Back</button>
-          <button class="btn btn--primary" id="next2">Continue</button>
-        </div>
+      <div class="wizard__nav">
+        <button class="btn btn--outline" id="back2">Back</button>
+        <button class="btn btn--primary" id="next2">Continue</button>
+      </div>
+    </div>
+
+    <!-- STEP 3: Your Group -->
+    <div class="wizard__step" id="step3" style="display:none;">
+      <div class="wizard__step-header">
+        <span class="eyebrow">Step 3</span>
+        <h2>Your Group</h2>
+        <p class="subtitle">Help us understand who's coming.</p>
       </div>
 
-      <!-- STEP 3: Your Group -->
-      <div class="wizard__step" id="step3" style="display:none;">
-        <div class="wizard__step-header">
-          <span class="eyebrow">Step 3</span>
-          <h2>Your Group</h2>
-          <p class="subtitle">Help us understand who's coming.</p>
+      <div class="wizard__form-fields">
+        <div class="form-group">
+          <label>I am...</label>
+          <div class="wizard__radio-group">
+            <label class="wizard__radio-card">
+              <input type="radio" name="role" value="captain" checked>
+              <div class="wizard__radio-card-inner">
+                <h4>A Team Captain</h4>
+                <p>I'm booking a court for my group</p>
+              </div>
+            </label>
+            <label class="wizard__radio-card">
+              <input type="radio" name="role" value="individual">
+              <div class="wizard__radio-card-inner">
+                <h4>An Individual</h4>
+                <p>I'm looking to join an existing group</p>
+              </div>
+            </label>
+          </div>
         </div>
-        <div class="wizard__form-fields">
+
+        <div id="captainFields">
           <div class="form-group">
-            <label>I am...</label>
-            <div class="wizard__radio-group">
-              <label class="wizard__radio-card">
-                <input type="radio" name="role" value="captain" checked>
-                <div class="wizard__radio-card-inner">
-                  <h4>A Team Captain</h4>
-                  <p>I'm booking a court for my group</p>
-                </div>
-              </label>
-              <label class="wizard__radio-card">
-                <input type="radio" name="role" value="individual">
-                <div class="wizard__radio-card-inner">
-                  <h4>An Individual</h4>
-                  <p>I'm looking to join an existing group</p>
-                </div>
-              </label>
-            </div>
-          </div>
-          <div id="captainFields">
-            <div class="form-group">
-              <label for="groupSize">How many players total (including yourself)? *</label>
-              <select id="groupSize">
-                <option value="">Select...</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="experience">Experience Level</label>
-            <select id="experience">
+            <label for="groupSize">How many players total (including yourself)? *</label>
+            <select id="groupSize">
               <option value="">Select...</option>
-              <option value="Beginner">Beginner</option>
-              <option value="Intermediate">Intermediate</option>
-              <option value="Advanced">Advanced</option>
-              <option value="Tournament">Tournament</option>
-              <option value="Mixed">Mixed levels in our group</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
             </select>
           </div>
-          <div class="form-group">
-            <label>Have you attended Performance Paddle Camp before?</label>
-            <div class="wizard__radio-inline">
-              <label><input type="radio" name="returning" value="yes"> <span>Yes</span></label>
-              <label><input type="radio" name="returning" value="no" checked> <span>No, first time</span></label>
-            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="experience">Experience Level</label>
+          <select id="experience">
+            <option value="">Select...</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+            <option value="Tournament">Tournament</option>
+            <option value="Mixed">Mixed levels in our group</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Have you attended Performance Paddle Camp before?</label>
+          <div class="wizard__radio-inline">
+            <label><input type="radio" name="returning" value="yes"> <span>Yes</span></label>
+            <label><input type="radio" name="returning" value="no" checked> <span>No, first time</span></label>
           </div>
         </div>
-        <div class="wizard__nav">
-          <button class="btn btn--outline" id="back3">Back</button>
-          <button class="btn btn--primary" id="next3">Continue</button>
-        </div>
       </div>
 
-      <!-- STEP 4: Attendee Names -->
-      <div class="wizard__step" id="step4" style="display:none;">
-        <div class="wizard__step-header">
-          <span class="eyebrow">Step 4</span>
-          <h2>Attendee Names</h2>
-          <p class="subtitle">List each player attending camp.</p>
-        </div>
-        <div class="wizard__form-fields" id="attendeeList">
-          <!-- Dynamically generated -->
-        </div>
-        <button class="wizard__add-btn" id="addAttendee">+ Add Another Player</button>
-        <div class="wizard__nav">
-          <button class="btn btn--outline" id="back4">Back</button>
-          <button class="btn btn--primary" id="next4">Continue</button>
-        </div>
-      </div>
-
-      <!-- STEP 5: Review & Submit -->
-      <div class="wizard__step" id="step5" style="display:none;">
-        <div class="wizard__step-header">
-          <span class="eyebrow">Step 5</span>
-          <h2>Review & Submit</h2>
-          <p class="subtitle">Please confirm everything looks right.</p>
-        </div>
-        <div class="wizard__review" id="reviewContent">
-          <!-- Dynamically generated -->
-        </div>
-        <div class="form-group" style="margin-top: 24px;">
-          <label for="notes">Anything else we should know? <span style="color: rgba(0,0,0,0.4);">(optional)</span></label>
-          <textarea id="notes" placeholder="Special requests, questions, dietary needs for social events..."></textarea>
-        </div>
-        <!-- Formspree form wraps the hidden submit -->
-        <form id="wizardForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" style="display:none;">
-          <input type="hidden" name="_subject" value="New Session Inquiry — Performance Paddle Camp">
-          <input type="hidden" name="_next" id="formNext">
-          <input type="hidden" name="sessions" id="fSessions">
-          <input type="hidden" name="contact_name" id="fName">
-          <input type="hidden" name="email" id="fEmail">
-          <input type="hidden" name="phone" id="fPhone">
-          <input type="hidden" name="club" id="fClub">
-          <input type="hidden" name="role" id="fRole">
-          <input type="hidden" name="group_size" id="fGroupSize">
-          <input type="hidden" name="experience" id="fExperience">
-          <input type="hidden" name="returning_camper" id="fReturning">
-          <input type="hidden" name="attendees" id="fAttendees">
-          <input type="hidden" name="notes" id="fNotes">
-        </form>
-        <div class="wizard__nav">
-          <button class="btn btn--outline" id="back5">Back</button>
-          <button class="btn btn--primary" id="submitBtn">Submit Inquiry</button>
-        </div>
-      </div>
-
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div>
-          <img src="logo.png" alt="Performance Paddle Camp" class="footer__logo" width="72" height="72" loading="lazy"><p class="footer__brand">Performance <span>Paddle</span> Camp</p>
-          <p>The longest-running platform tennis camp in America. Founded 1997.</p>
-          <p class="mt-sm" style="color: rgba(255,255,255,0.4);">Email: <a href="mailto:info@performancepaddlecamp.com" style="color: var(--sand-light);">info@performancepaddlecamp.com</a></p>
-        </div>
-        <div class="footer__links">
-          <h4>Camp</h4>
-          <a href="camp.html">The Camp</a>
-          <a href="sessions.html">Nantucket Sessions</a>
-          <a href="club.html">Bring Camp to Your Club</a>
-          <a href="coaches.html">Meet the Coaches</a>
-        </div>
-        <div class="footer__links">
-          <h4>Camp Life</h4>
-          <a href="gallery.html">Gallery</a>
-          <a href="results.html">Results & Testimonials</a>
-          <a href="nantucket.html">The Nantucket Experience</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>© 2026 Performance Paddle Camp. All rights reserved.</p>
+      <div class="wizard__nav">
+        <button class="btn btn--outline" id="back3">Back</button>
+        <button class="btn btn--primary" id="next3">Continue</button>
       </div>
     </div>
-  </footer>
 
-  <script src="main.js"></script>
-  <script>
-  (function() {
-    const SESSION_LABELS = {
-      '1': 'Session 1 — Sept 8–10, 2026',
-      '2': 'Session 2 — Sept 10–12, 2026',
-      '3': 'Session 3 — Sept 12–14, 2026',
-      '4': 'Session 4 — Sept 14–16, 2026'
-    };
+    <!-- STEP 4: Attendee Names -->
+    <div class="wizard__step" id="step4" style="display:none;">
+      <div class="wizard__step-header">
+        <span class="eyebrow">Step 4</span>
+        <h2>Attendee Names</h2>
+        <p class="subtitle">List each player attending camp.</p>
+      </div>
 
-    // Pre-select session from URL
-    const params = new URLSearchParams(window.location.search);
-    const preSession = params.get('session');
-    if (preSession) {
-      const cb = document.querySelector(`.wizard__session-card[data-session="${preSession}"] input`);
-      if (cb) cb.checked = true;
-    }
+      <div class="wizard__form-fields" id="attendeeList">
+        <!-- Dynamically generated -->
+      </div>
+      <button class="wizard__add-btn" id="addAttendee">+ Add Another Player</button>
 
-    // Card click visual state
-    document.querySelectorAll('.wizard__session-card input').forEach(cb => {
-      cb.addEventListener('change', () => {
-        cb.closest('.wizard__session-card').classList.toggle('is-selected', cb.checked);
-      });
-      if (cb.checked) cb.closest('.wizard__session-card').classList.add('is-selected');
+      <div class="wizard__nav">
+        <button class="btn btn--outline" id="back4">Back</button>
+        <button class="btn btn--primary" id="next4">Continue</button>
+      </div>
+    </div>
+
+    <!-- STEP 5: Review & Submit -->
+    <div class="wizard__step" id="step5" style="display:none;">
+      <div class="wizard__step-header">
+        <span class="eyebrow">Step 5</span>
+        <h2>Review &amp; Submit</h2>
+        <p class="subtitle">Please confirm everything looks right.</p>
+      </div>
+
+      <div class="wizard__review" id="reviewContent">
+        <!-- Dynamically generated -->
+      </div>
+
+      <div class="form-group" style="margin-top: 24px;">
+        <label for="notes">Anything else we should know? <span style="color: rgba(0,0,0,0.4);">(optional)</span></label>
+        <textarea id="notes" placeholder="Special requests, questions, dietary needs for social events..."></textarea>
+      </div>
+
+      <!-- Formspree form wraps the hidden submit -->
+      <form id="wizardForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" style="display:none;">
+        <input type="hidden" name="_subject" value="New Session Inquiry — Performance Paddle Camp">
+        <input type="hidden" name="_next" id="formNext">
+        <input type="hidden" name="sessions" id="fSessions">
+        <input type="hidden" name="contact_name" id="fName">
+        <input type="hidden" name="email" id="fEmail">
+        <input type="hidden" name="phone" id="fPhone">
+        <input type="hidden" name="club" id="fClub">
+        <input type="hidden" name="role" id="fRole">
+        <input type="hidden" name="group_size" id="fGroupSize">
+        <input type="hidden" name="experience" id="fExperience">
+        <input type="hidden" name="returning_camper" id="fReturning">
+        <input type="hidden" name="attendees" id="fAttendees">
+        <input type="hidden" name="notes" id="fNotes">
+      </form>
+
+      <div class="wizard__nav">
+        <button class="btn btn--outline" id="back5">Back</button>
+        <button class="btn btn--primary" id="submitBtn">Submit Inquiry</button>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <img src="logo.png" alt="Performance Paddle Camp" class="footer__logo" width="72" height="72" loading="lazy">
+        <p class="footer__brand">Performance <span>Paddle</span> Camp</p>
+        <p>The longest-running platform tennis camp in America. Founded 1997.</p>
+        <p class="mt-sm" style="color: rgba(255,255,255,0.4);">Email: <a href="mailto:info@performancepaddlecamp.com" style="color: var(--sand-light);">info@performancepaddlecamp.com</a></p>
+      </div>
+      <div class="footer__links">
+        <h4>Camp</h4>
+        <a href="camp.html">The Camp</a>
+        <a href="sessions.html">Nantucket Sessions</a>
+        <a href="club.html">Bring Camp to Your Club</a>
+        <a href="coaches.html">Meet the Coaches</a>
+      </div>
+      <div class="footer__links">
+        <h4>Camp Life</h4>
+        <a href="gallery.html">Gallery</a>
+        <a href="results.html">Results &amp; Testimonials</a>
+        <a href="nantucket.html">The Nantucket Experience</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Performance Paddle Camp. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+(function() {
+  const SESSION_LABELS = {
+    '1': 'Session 1 — Sept 8–10, 2026',
+    '2': 'Session 2 — Sept 10–12, 2026',
+    '3': 'Session 3 — Sept 12–14, 2026',
+    '4': 'Session 4 — Sept 14–16, 2026'
+  };
+
+  // Pre-select session from URL
+  const params = new URLSearchParams(window.location.search);
+  const preSession = params.get('session');
+  if (preSession) {
+    const cb = document.querySelector(`.wizard__session-card[data-session="${preSession}"] input`);
+    if (cb) cb.checked = true;
+  }
+
+  // Card click visual state
+  document.querySelectorAll('.wizard__session-card input').forEach(cb => {
+    cb.addEventListener('change', () => {
+      cb.closest('.wizard__session-card').classList.toggle('is-selected', cb.checked);
     });
+    if (cb.checked) cb.closest('.wizard__session-card').classList.add('is-selected');
+  });
 
-    document.querySelectorAll('.wizard__radio-card input').forEach(r => {
-      r.addEventListener('change', () => {
-        document.querySelectorAll('.wizard__radio-card').forEach(c => c.classList.remove('is-selected'));
-        if (r.checked) r.closest('.wizard__radio-card').classList.add('is-selected');
-      });
+  document.querySelectorAll('.wizard__radio-card input').forEach(r => {
+    r.addEventListener('change', () => {
+      document.querySelectorAll('.wizard__radio-card').forEach(c => c.classList.remove('is-selected'));
       if (r.checked) r.closest('.wizard__radio-card').classList.add('is-selected');
     });
+    if (r.checked) r.closest('.wizard__radio-card').classList.add('is-selected');
+  });
 
-    // Role toggle
-    document.querySelectorAll('input[name="role"]').forEach(r => {
-      r.addEventListener('change', () => {
-        document.getElementById('captainFields').style.display = r.value === 'captain' ? 'block' : 'none';
-      });
+  // Role toggle
+  document.querySelectorAll('input[name="role"]').forEach(r => {
+    r.addEventListener('change', () => {
+      document.getElementById('captainFields').style.display = r.value === 'captain' ? 'block' : 'none';
     });
+  });
 
-    let currentStep = 1;
-    const totalSteps = 5;
+  let currentStep = 1;
+  const totalSteps = 5;
 
-    function showStep(n) {
-      for (let i = 1; i <= totalSteps; i++) {
-        document.getElementById('step' + i).style.display = i === n ? 'block' : 'none';
-      }
-      currentStep = n;
-      document.getElementById('progressBar').style.width = ((n / totalSteps) * 100) + '%';
-      document.getElementById('stepLabel').textContent = `Step ${n} of ${totalSteps}`;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+  function showStep(n) {
+    for (let i = 1; i <= totalSteps; i++) {
+      document.getElementById('step' + i).style.display = i === n ? 'block' : 'none';
     }
+    currentStep = n;
+    document.getElementById('progressBar').style.width = ((n / totalSteps) * 100) + '%';
+    document.getElementById('stepLabel').textContent = `Step ${n} of ${totalSteps}`;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
-    function getSelectedSessions() {
-      return Array.from(document.querySelectorAll('.wizard__session-card input:checked')).map(cb => cb.value);
+  function getSelectedSessions() {
+    return Array.from(document.querySelectorAll('.wizard__session-card input:checked')).map(cb => cb.value);
+  }
+
+  function getRole() {
+    const r = document.querySelector('input[name="role"]:checked');
+    return r ? r.value : 'captain';
+  }
+
+  function getReturning() {
+    const r = document.querySelector('input[name="returning"]:checked');
+    return r ? r.value : 'no';
+  }
+
+  function buildAttendeeFields() {
+    const list = document.getElementById('attendeeList');
+    const role = getRole();
+    let count = 1;
+    if (role === 'captain') {
+      count = parseInt(document.getElementById('groupSize').value) || 1;
     }
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
 
-    function getRole() {
-      const r = document.querySelector('input[name="role"]:checked');
-      return r ? r.value : 'captain';
-    }
-
-    function getReturning() {
-      const r = document.querySelector('input[name="returning"]:checked');
-      return r ? r.value : 'no';
-    }
-
-    function buildAttendeeFields() {
-      const list = document.getElementById('attendeeList');
-      const role = getRole();
-      let count = 1;
-      if (role === 'captain') {
-        count = parseInt(document.getElementById('groupSize').value) || 1;
-      }
-      const firstName = document.getElementById('firstName').value;
-      const lastName = document.getElementById('lastName').value;
-
-      list.innerHTML = '';
-      for (let i = 0; i < count; i++) {
-        const row = document.createElement('div');
-        row.className = 'wizard__attendee-row';
-        row.innerHTML = `
-          <div class="wizard__attendee-num">${i + 1}</div>
-          <div class="form-group">
-            <label>First Name *</label>
-            <input type="text" class="att-first" value="${i === 0 ? firstName : ''}" ${i === 0 ? '' : ''} required>
-          </div>
-          <div class="form-group">
-            <label>Last Name *</label>
-            <input type="text" class="att-last" value="${i === 0 ? lastName : ''}" required>
-          </div>
-          ${i > 0 ? '<button type="button" class="wizard__remove-btn" title="Remove">×</button>' : '<div style="width:32px;"></div>'}
-        `;
-        list.appendChild(row);
-      }
-
-      // Remove handlers
-      list.querySelectorAll('.wizard__remove-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          btn.closest('.wizard__attendee-row').remove();
-          renumberAttendees();
-        });
-      });
-    }
-
-    function renumberAttendees() {
-      document.querySelectorAll('.wizard__attendee-num').forEach((el, i) => {
-        el.textContent = i + 1;
-      });
-    }
-
-    document.getElementById('addAttendee').addEventListener('click', () => {
-      const list = document.getElementById('attendeeList');
-      const count = list.children.length + 1;
+    list.innerHTML = '';
+    for (let i = 0; i < count; i++) {
       const row = document.createElement('div');
       row.className = 'wizard__attendee-row';
       row.innerHTML = `
-        <div class="wizard__attendee-num">${count}</div>
+        <div class="wizard__attendee-num">${i + 1}</div>
         <div class="form-group">
           <label>First Name *</label>
-          <input type="text" class="att-first" required>
+          <input type="text" class="att-first" value="${i === 0 ? firstName : ''}" required>
         </div>
         <div class="form-group">
           <label>Last Name *</label>
-          <input type="text" class="att-last" required>
+          <input type="text" class="att-last" value="${i === 0 ? lastName : ''}" required>
         </div>
-        <button type="button" class="wizard__remove-btn" title="Remove">×</button>
+        ${i > 0 ? '<button type="button" class="wizard__remove-btn" title="Remove">\u00d7</button>' : '<div style="width:32px;"></div>'}
       `;
       list.appendChild(row);
-      row.querySelector('.wizard__remove-btn').addEventListener('click', () => {
-        row.remove();
+    }
+
+    // Remove handlers
+    list.querySelectorAll('.wizard__remove-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.closest('.wizard__attendee-row').remove();
         renumberAttendees();
       });
     });
+  }
 
-    function getAttendees() {
-      const rows = document.querySelectorAll('.wizard__attendee-row');
-      const attendees = [];
-      rows.forEach(row => {
-        const f = row.querySelector('.att-first').value.trim();
-        const l = row.querySelector('.att-last').value.trim();
-        if (f || l) attendees.push(`${f} ${l}`);
-      });
-      return attendees;
-    }
-
-    function buildReview() {
-      const sessions = getSelectedSessions().map(s => SESSION_LABELS[s]).join(', ');
-      const name = `${document.getElementById('firstName').value} ${document.getElementById('lastName').value}`;
-      const email = document.getElementById('wizEmail').value;
-      const phone = document.getElementById('wizPhone').value;
-      const club = document.getElementById('wizClub').value || '—';
-      const role = getRole();
-      const roleLabel = role === 'captain' ? 'Team Captain' : 'Individual';
-      const groupSize = role === 'captain' ? (document.getElementById('groupSize').value || '—') : '1';
-      const exp = document.getElementById('experience').value || '—';
-      const returning = getReturning() === 'yes' ? 'Yes' : 'No';
-      const attendees = getAttendees();
-
-      const html = `
-        <div class="wizard__review-section">
-          <h4>Session(s)</h4>
-          <p>${sessions}</p>
-        </div>
-        <div class="wizard__review-section">
-          <h4>Contact</h4>
-          <p>${name}<br>${email}<br>${phone}<br>Club: ${club}</p>
-        </div>
-        <div class="wizard__review-section">
-          <h4>Group Details</h4>
-          <p>Role: ${roleLabel}<br>Group size: ${groupSize}<br>Experience: ${exp}<br>Returning camper: ${returning}</p>
-        </div>
-        <div class="wizard__review-section">
-          <h4>Attendees (${attendees.length})</h4>
-          <ol class="wizard__review-list">${attendees.map(a => `<li>${a}</li>`).join('')}</ol>
-        </div>
-      `;
-      document.getElementById('reviewContent').innerHTML = html;
-    }
-
-    // Validation helpers
-    function showError(msg) {
-      // Remove existing
-      document.querySelectorAll('.wizard__error').forEach(e => e.remove());
-      const el = document.createElement('div');
-      el.className = 'wizard__error';
-      el.textContent = msg;
-      const activeStep = document.querySelector('.wizard__step[style*="block"]') || document.getElementById('step' + currentStep);
-      const nav = activeStep.querySelector('.wizard__nav');
-      nav.insertAdjacentElement('beforebegin', el);
-      setTimeout(() => el.remove(), 4000);
-    }
-
-    // Navigation
-    document.getElementById('next1').addEventListener('click', () => {
-      if (getSelectedSessions().length === 0) return showError('Please select at least one session.');
-      showStep(2);
+  function renumberAttendees() {
+    document.querySelectorAll('.wizard__attendee-num').forEach((el, i) => {
+      el.textContent = i + 1;
     });
+  }
 
-    document.getElementById('next2').addEventListener('click', () => {
-      const f = document.getElementById('firstName').value.trim();
-      const l = document.getElementById('lastName').value.trim();
-      const e = document.getElementById('wizEmail').value.trim();
-      const p = document.getElementById('wizPhone').value.trim();
-      if (!f || !l) return showError('Please enter your first and last name.');
-      if (!e) return showError('Please enter your email.');
-      if (!p) return showError('Please enter your phone number.');
-      showStep(3);
+  document.getElementById('addAttendee').addEventListener('click', () => {
+    const list = document.getElementById('attendeeList');
+    const count = list.children.length + 1;
+    const row = document.createElement('div');
+    row.className = 'wizard__attendee-row';
+    row.innerHTML = `
+      <div class="wizard__attendee-num">${count}</div>
+      <div class="form-group">
+        <label>First Name *</label>
+        <input type="text" class="att-first" required>
+      </div>
+      <div class="form-group">
+        <label>Last Name *</label>
+        <input type="text" class="att-last" required>
+      </div>
+      <button type="button" class="wizard__remove-btn" title="Remove">\u00d7</button>
+    `;
+    list.appendChild(row);
+    row.querySelector('.wizard__remove-btn').addEventListener('click', () => {
+      row.remove();
+      renumberAttendees();
     });
+  });
 
-    document.getElementById('next3').addEventListener('click', () => {
-      const role = getRole();
-      if (role === 'captain') {
-        const size = document.getElementById('groupSize').value;
-        if (!size) return showError('Please select your group size.');
-      }
-      if (role === 'individual') {
-        // Skip attendee names for individuals
-        buildReview();
-        showStep(5);
-        return;
-      }
-      buildAttendeeFields();
-      showStep(4);
+  function getAttendees() {
+    const rows = document.querySelectorAll('.wizard__attendee-row');
+    const attendees = [];
+    rows.forEach(row => {
+      const f = row.querySelector('.att-first').value.trim();
+      const l = row.querySelector('.att-last').value.trim();
+      if (f || l) attendees.push(`${f} ${l}`);
     });
+    return attendees;
+  }
 
-    document.getElementById('next4').addEventListener('click', () => {
-      const attendees = getAttendees();
-      if (attendees.length === 0) return showError('Please enter at least one attendee name.');
-      const rows = document.querySelectorAll('.wizard__attendee-row');
-      let incomplete = false;
-      rows.forEach(row => {
-        if (!row.querySelector('.att-first').value.trim() || !row.querySelector('.att-last').value.trim()) {
-          incomplete = true;
-        }
-      });
-      if (incomplete) return showError('Please fill in first and last name for all attendees.');
+  function buildReview() {
+    const sessions = getSelectedSessions().map(s => SESSION_LABELS[s]).join(', ');
+    const name = `${document.getElementById('firstName').value} ${document.getElementById('lastName').value}`;
+    const email = document.getElementById('wizEmail').value;
+    const phone = document.getElementById('wizPhone').value;
+    const club = document.getElementById('wizClub').value || '\u2014';
+    const role = getRole();
+    const roleLabel = role === 'captain' ? 'Team Captain' : 'Individual';
+    const groupSize = role === 'captain' ? (document.getElementById('groupSize').value || '\u2014') : '1';
+    const exp = document.getElementById('experience').value || '\u2014';
+    const returning = getReturning() === 'yes' ? 'Yes' : 'No';
+    const attendees = getAttendees();
+
+    const html = `
+      <div class="wizard__review-section">
+        <h4>Session(s)</h4>
+        <p>${sessions}</p>
+      </div>
+      <div class="wizard__review-section">
+        <h4>Contact</h4>
+        <p>${name}<br>${email}<br>${phone}<br>Club: ${club}</p>
+      </div>
+      <div class="wizard__review-section">
+        <h4>Group Details</h4>
+        <p>Role: ${roleLabel}<br>Group size: ${groupSize}<br>Experience: ${exp}<br>Returning camper: ${returning}</p>
+      </div>
+      <div class="wizard__review-section">
+        <h4>Attendees (${attendees.length})</h4>
+        <ol class="wizard__review-list">${attendees.map(a => `<li>${a}</li>`).join('')}</ol>
+      </div>
+    `;
+    document.getElementById('reviewContent').innerHTML = html;
+  }
+
+  // Validation helpers
+  function showError(msg) {
+    document.querySelectorAll('.wizard__error').forEach(e => e.remove());
+    const el = document.createElement('div');
+    el.className = 'wizard__error';
+    el.textContent = msg;
+    const activeStep = document.querySelector('.wizard__step[style*="block"]') || document.getElementById('step' + currentStep);
+    const nav = activeStep.querySelector('.wizard__nav');
+    nav.insertAdjacentElement('beforebegin', el);
+    setTimeout(() => el.remove(), 4000);
+  }
+
+  // Navigation
+  document.getElementById('next1').addEventListener('click', () => {
+    if (getSelectedSessions().length === 0) return showError('Please select at least one session.');
+    showStep(2);
+  });
+
+  document.getElementById('next2').addEventListener('click', () => {
+    const f = document.getElementById('firstName').value.trim();
+    const l = document.getElementById('lastName').value.trim();
+    const e = document.getElementById('wizEmail').value.trim();
+    const p = document.getElementById('wizPhone').value.trim();
+    if (!f || !l) return showError('Please enter your first and last name.');
+    if (!e) return showError('Please enter your email.');
+    if (!p) return showError('Please enter your phone number.');
+    showStep(3);
+  });
+
+  document.getElementById('next3').addEventListener('click', () => {
+    const role = getRole();
+    if (role === 'captain') {
+      const size = document.getElementById('groupSize').value;
+      if (!size) return showError('Please select your group size.');
+    }
+    if (role === 'individual') {
       buildReview();
       showStep(5);
-    });
+      return;
+    }
+    buildAttendeeFields();
+    showStep(4);
+  });
 
-    document.getElementById('back2').addEventListener('click', () => showStep(1));
-    document.getElementById('back3').addEventListener('click', () => showStep(2));
-    document.getElementById('back4').addEventListener('click', () => showStep(3));
-    document.getElementById('back5').addEventListener('click', () => {
-      if (getRole() === 'individual') showStep(3);
-      else showStep(4);
+  document.getElementById('next4').addEventListener('click', () => {
+    const attendees = getAttendees();
+    if (attendees.length === 0) return showError('Please enter at least one attendee name.');
+    const rows = document.querySelectorAll('.wizard__attendee-row');
+    let incomplete = false;
+    rows.forEach(row => {
+      if (!row.querySelector('.att-first').value.trim() || !row.querySelector('.att-last').value.trim()) {
+        incomplete = true;
+      }
     });
+    if (incomplete) return showError('Please fill in first and last name for all attendees.');
+    buildReview();
+    showStep(5);
+  });
 
-    // Submit
-    document.getElementById('submitBtn').addEventListener('click', () => {
-      const sessions = getSelectedSessions().map(s => SESSION_LABELS[s]).join(', ');
-      const name = `${document.getElementById('firstName').value} ${document.getElementById('lastName').value}`;
-      
-      document.getElementById('fSessions').value = sessions;
-      document.getElementById('fName').value = name;
-      document.getElementById('fEmail').value = document.getElementById('wizEmail').value;
-      document.getElementById('fPhone').value = document.getElementById('wizPhone').value;
-      document.getElementById('fClub').value = document.getElementById('wizClub').value || '';
-      document.getElementById('fRole').value = getRole() === 'captain' ? 'Team Captain' : 'Individual';
-      document.getElementById('fGroupSize').value = getRole() === 'captain' ? document.getElementById('groupSize').value : '1';
-      document.getElementById('fExperience').value = document.getElementById('experience').value || '';
-      document.getElementById('fReturning').value = getReturning() === 'yes' ? 'Yes' : 'No';
-      document.getElementById('fAttendees').value = getAttendees().join(', ');
-      document.getElementById('fNotes').value = document.getElementById('notes').value;
-      document.getElementById('formNext').value = window.location.origin + window.location.pathname.replace('inquiry.html', 'thank-you.html');
+  document.getElementById('back2').addEventListener('click', () => showStep(1));
+  document.getElementById('back3').addEventListener('click', () => showStep(2));
+  document.getElementById('back4').addEventListener('click', () => showStep(3));
+  document.getElementById('back5').addEventListener('click', () => {
+    if (getRole() === 'individual') showStep(3);
+    else showStep(4);
+  });
 
-      document.getElementById('wizardForm').submit();
-    });
-  })();
-  </script>
+  // Submit
+  document.getElementById('submitBtn').addEventListener('click', () => {
+    const sessions = getSelectedSessions().map(s => SESSION_LABELS[s]).join(', ');
+    const name = `${document.getElementById('firstName').value} ${document.getElementById('lastName').value}`;
+
+    document.getElementById('fSessions').value = sessions;
+    document.getElementById('fName').value = name;
+    document.getElementById('fEmail').value = document.getElementById('wizEmail').value;
+    document.getElementById('fPhone').value = document.getElementById('wizPhone').value;
+    document.getElementById('fClub').value = document.getElementById('wizClub').value || '';
+    document.getElementById('fRole').value = getRole() === 'captain' ? 'Team Captain' : 'Individual';
+    document.getElementById('fGroupSize').value = getRole() === 'captain' ? document.getElementById('groupSize').value : '1';
+    document.getElementById('fExperience').value = document.getElementById('experience').value || '';
+    document.getElementById('fReturning').value = getReturning() === 'yes' ? 'Yes' : 'No';
+    document.getElementById('fAttendees').value = getAttendees().join(', ');
+    document.getElementById('fNotes').value = document.getElementById('notes').value;
+
+    document.getElementById('formNext').value = window.location.origin + window.location.pathname.replace('inquiry.html', 'thank-you.html');
+    document.getElementById('wizardForm').submit();
+  });
+})();
+</script>
 </body>
 </html>
