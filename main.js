@@ -50,17 +50,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Nav Shadow on Scroll + Hero Parallax ---
   const nav = document.querySelector('.nav');
   const heroBgs = document.querySelectorAll('.hero .hero__bg');
-  if (nav || heroBgs.length > 0) {
-    window.addEventListener('scroll', () => {
-      var scrollY = window.scrollY;
-      if (nav) {
-        nav.style.boxShadow = scrollY > 40 ? '0 2px 12px rgba(0,0,0,0.1)' : '0 1px 4px rgba(0,0,0,0.06)';
-      }
-      for (var i = 0; i < heroBgs.length; i++) {
-        heroBgs[i].style.transform = 'translateY(' + (scrollY * 0.4) + 'px)';
-      }
-    }, { passive: true });
-  }
+  heroBgs.forEach(function(bg) { bg.style.willChange = 'transform'; });
+  var ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        if (nav) {
+          nav.style.boxShadow = scrollY > 40 ? '0 2px 12px rgba(0,0,0,0.1)' : '0 1px 4px rgba(0,0,0,0.06)';
+        }
+        for (var i = 0; i < heroBgs.length; i++) {
+          heroBgs[i].style.transform = 'translate3d(0,' + (scrollY * 0.4) + 'px,0)';
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
 
   // --- Nav Dropdown ---
   document.querySelectorAll('.nav__dropdown-toggle').forEach(btn => {
