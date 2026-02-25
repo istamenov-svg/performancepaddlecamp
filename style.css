@@ -1348,7 +1348,7 @@ p:last-child { margin-bottom: 0; }
   margin-top: 8px;
   align-items: stretch;
 }
-.wizard__radio-card { cursor: pointer; display: flex; height: 100%; }
+.wizard__radio-card { cursor: pointer; display: flex !important; height: 100%; }
 .wizard__radio-card input { display: none; }
 .wizard__radio-card-inner {
   border: 2px solid rgba(0,0,0,0.1);
