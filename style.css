@@ -950,6 +950,9 @@ p:last-child { margin-bottom: 0; }
   left: 0;
   color: var(--sand);
 }
+.section--navy .club-list li {
+  color: rgba(255,255,255,0.8);
+}
 
 /* --- Footer --- */
 .footer {
