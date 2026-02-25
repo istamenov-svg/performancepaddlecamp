@@ -435,7 +435,6 @@ p:last-child { margin-bottom: 0; }
 .hero--short .hero__bg {
   background-size: auto 100%;
   background-position: center center;
-  background-attachment: scroll;
 }
 
 .hero__overlay {
