@@ -361,7 +361,9 @@ p:last-child { margin-bottom: 0; }
   padding-top: var(--nav-height);
   overflow: hidden;
 }
-.hero--short { min-height: 62vh; }
+.hero--short {
+  min-height: 62vh;
+}
 
 /* Image hero - full width, natural aspect ratio, text overlay at bottom */
 .hero--img {
@@ -433,8 +435,11 @@ p:last-child { margin-bottom: 0; }
   .hero__bg { background-attachment: fixed; }
 }
 .hero--short .hero__bg {
+  position: absolute;
+  inset: 0;
   background-size: auto 100%;
   background-position: center center;
+  background-attachment: scroll;
 }
 
 .hero__overlay {

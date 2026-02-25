@@ -59,23 +59,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+  // --- Hero Parallax ---
+  const heroBgs = document.querySelectorAll('.hero--short .hero__bg');
+  if (heroBgs.length > 0) {
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      heroBgs.forEach(bg => {
+        bg.style.transform = 'translateY(' + (scrollY * 0.4) + 'px)';
+      });
+    }, { passive: true });
+  }
+
   // --- Nav Dropdown ---
   document.querySelectorAll('.nav__dropdown-toggle').forEach(btn => {
     btn.addEventListener('click', (e) => {
+      e.preventDefault();
       e.stopPropagation();
       const dropdown = btn.closest('.nav__dropdown');
-      dropdown.classList.toggle('is-open');
+      const wasOpen = dropdown.classList.contains('is-open');
+      // Close all dropdowns first
+      document.querySelectorAll('.nav__dropdown.is-open').forEach(d => d.classList.remove('is-open'));
+      // Toggle clicked one
+      if (!wasOpen) dropdown.classList.add('is-open');
     });
   });
 
   // Close dropdown on outside click
-  document.addEventListener('click', () => {
-    document.querySelectorAll('.nav__dropdown.is-open').forEach(d => d.classList.remove('is-open'));
-  });
-
-  // Stop clicks inside dropdown from closing it
-  document.querySelectorAll('.nav__dropdown-menu').forEach(menu => {
-    menu.addEventListener('click', (e) => e.stopPropagation());
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav__dropdown')) {
+      document.querySelectorAll('.nav__dropdown.is-open').forEach(d => d.classList.remove('is-open'));
+    }
   });
 
   // --- Active Nav Link ---
