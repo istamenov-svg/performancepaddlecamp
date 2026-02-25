@@ -47,26 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Nav Shadow on Scroll ---
+  // --- Nav Shadow on Scroll + Hero Parallax ---
   const nav = document.querySelector('.nav');
-  if (nav) {
+  const heroBgs = document.querySelectorAll('.hero .hero__bg');
+  if (nav || heroBgs.length > 0) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        nav.style.boxShadow = '0 2px 12px rgba(0,0,0,0.1)';
-      } else {
-        nav.style.boxShadow = '0 1px 4px rgba(0,0,0,0.06)';
+      var scrollY = window.scrollY;
+      if (nav) {
+        nav.style.boxShadow = scrollY > 40 ? '0 2px 12px rgba(0,0,0,0.1)' : '0 1px 4px rgba(0,0,0,0.06)';
       }
-    }, { passive: true });
-  }
-
-  // --- Hero Parallax ---
-  const heroBgs = document.querySelectorAll('.hero--short .hero__bg');
-  if (heroBgs.length > 0) {
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      heroBgs.forEach(bg => {
-        bg.style.transform = 'translateY(' + (scrollY * 0.4) + 'px)';
-      });
+      for (var i = 0; i < heroBgs.length; i++) {
+        heroBgs[i].style.transform = 'translateY(' + (scrollY * 0.4) + 'px)';
+      }
     }, { passive: true });
   }
 
