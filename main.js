@@ -119,3 +119,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* --- Standalone Hero Parallax (fallback) --- */
+(function() {
+  function initParallax() {
+    var bgs = document.querySelectorAll('.hero .hero__bg');
+    if (!bgs.length || bgs[0].getAttribute('data-parallax')) return;
+    bgs.forEach(function(bg) {
+      bg.setAttribute('data-parallax', '1');
+      bg.style.willChange = 'transform';
+    });
+    var running = false;
+    window.addEventListener('scroll', function() {
+      if (!running) {
+        window.requestAnimationFrame(function() {
+          var y = window.pageYOffset || document.documentElement.scrollTop;
+          for (var i = 0; i < bgs.length; i++) {
+            bgs[i].style.transform = 'translate3d(0,' + (y * 0.4) + 'px,0)';
+          }
+          running = false;
+        });
+        running = true;
+      }
+    }, { passive: true });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initParallax);
+  } else {
+    initParallax();
+  }
+  window.addEventListener('load', initParallax);
+})();

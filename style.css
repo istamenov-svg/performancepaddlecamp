@@ -363,6 +363,7 @@ p:last-child { margin-bottom: 0; }
 }
 .hero--short {
   min-height: 62vh;
+  background: var(--white) !important;
 }
 
 /* Image hero - full width, natural aspect ratio, text overlay at bottom */
@@ -438,6 +439,7 @@ p:last-child { margin-bottom: 0; }
   background-position: center center;
   background-repeat: no-repeat;
   background-color: var(--white);
+  opacity: 1;
 }
 
 .hero__overlay {
