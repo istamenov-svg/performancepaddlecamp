@@ -97,6 +97,37 @@
     </div>
   </header>
 
+  <!-- Countdown Bar -->
+  <div class="countdown-bar">
+    <div class="countdown-bar__inner">
+      <div class="countdown-bar__label">Camp Opens In</div>
+      <div class="countdown-bar__timer" id="countdownTimer">
+        <div class="countdown-bar__unit">
+          <span class="countdown-bar__num" id="cdDays">---</span>
+          <span class="countdown-bar__text">Days</span>
+        </div>
+        <span class="countdown-bar__sep">:</span>
+        <div class="countdown-bar__unit">
+          <span class="countdown-bar__num" id="cdHours">--</span>
+          <span class="countdown-bar__text">Hours</span>
+        </div>
+        <span class="countdown-bar__sep">:</span>
+        <div class="countdown-bar__unit">
+          <span class="countdown-bar__num" id="cdMin">--</span>
+          <span class="countdown-bar__text">Min</span>
+        </div>
+        <span class="countdown-bar__sep">:</span>
+        <div class="countdown-bar__unit">
+          <span class="countdown-bar__num" id="cdSec">--</span>
+          <span class="countdown-bar__text">Sec</span>
+        </div>
+      </div>
+      <a href="https://xenonpaddle.com" target="_blank" rel="noopener" class="countdown-bar__sponsor">
+        <img src="xenon-logo.png" alt="Xenon Paddle" class="countdown-bar__sponsor-img">
+      </a>
+    </div>
+  </div>
+
   <!-- Two Ways to Train -->
   <section class="section" id="services">
     <div class="container">
@@ -294,5 +325,28 @@
     </div>
   </footer>
   <script src="main.js"></script>
+  <script>
+  (function() {
+    var target = new Date('2026-09-08T08:00:00-04:00').getTime();
+    function update() {
+      var now = Date.now();
+      var diff = target - now;
+      if (diff <= 0) {
+        document.getElementById('countdownTimer').innerHTML = '<div class="countdown-bar__live">Camp Is Live!</div>';
+        return;
+      }
+      var d = Math.floor(diff / 86400000);
+      var h = Math.floor((diff % 86400000) / 3600000);
+      var m = Math.floor((diff % 3600000) / 60000);
+      var s = Math.floor((diff % 60000) / 1000);
+      document.getElementById('cdDays').textContent = d;
+      document.getElementById('cdHours').textContent = h < 10 ? '0' + h : h;
+      document.getElementById('cdMin').textContent = m < 10 ? '0' + m : m;
+      document.getElementById('cdSec').textContent = s < 10 ? '0' + s : s;
+    }
+    update();
+    setInterval(update, 1000);
+  })();
+  </script>
 </body>
 </html>
