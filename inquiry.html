@@ -577,4 +577,13 @@
     document.getElementById('fExperience').value = document.getElementById('experience').value || '';
     document.getElementById('fReturning').value = getReturning() === 'yes' ? 'Yes' : 'No';
     document.getElementById('fAttendees').value = getAttendees().join(', ');
-    document.getElementById('fNotes').value = documen
+    document.getElementById('fNotes').value = document.getElementById('notes').value || '';
+    document.getElementById('formNext').value = window.location.origin + window.location.pathname.replace('inquiry.html', 'thank-you.html');
+
+    document.getElementById('wizardForm').submit();
+  });
+
+})();
+</script>
+</body>
+</html>
