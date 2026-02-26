@@ -1174,6 +1174,8 @@ p:last-child { margin-bottom: 0; }
     color: rgba(15,23,32,0.6) !important;
     padding: 8px 0;
     font-size: 0.8rem;
+    display: block;
+    text-align: center;
   }
   .nav__dropdown-menu a:hover {
     background: transparent;
