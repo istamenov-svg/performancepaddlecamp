@@ -1157,7 +1157,7 @@ p:last-child { margin-bottom: 0; }
 
   /* Mobile nav dropdown - inline, no popup */
   .nav__dropdown { width: 100%; }
-  .nav__dropdown-toggle { width: 100%; text-align: left; }
+  .nav__dropdown-toggle { width: 100%; text-align: center; }
   .nav__dropdown-menu {
     position: static;
     transform: none;
