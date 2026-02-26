@@ -815,7 +815,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--text-dark);
   margin-bottom: 8px;
 }
-.form-group input,
+.form-group input:not([type="radio"]):not([type="checkbox"]),
 .form-group select,
 .form-group textarea {
   width: 100%;
@@ -829,6 +829,14 @@ p:last-child { margin-bottom: 0; }
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
   appearance: none;
   -webkit-appearance: none;
+}
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+  width: auto;
+  appearance: auto;
+  -webkit-appearance: auto;
+  cursor: pointer;
+  accent-color: var(--sand);
 }
 .form-group input:focus,
 .form-group select:focus,
