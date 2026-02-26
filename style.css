@@ -1161,27 +1161,27 @@ p:last-child { margin-bottom: 0; }
   .nav__dropdown { width: 100%; }
   .nav__dropdown-toggle { width: 100%; text-align: center; }
   .nav__dropdown-menu {
-    position: static;
-    transform: none;
+    position: static !important;
+    transform: none !important;
     background: transparent;
     box-shadow: none;
     min-width: 0;
     padding: 4px 0 0 0;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
   .nav__dropdown-menu::before { display: none; }
   .nav__dropdown-menu a {
     color: rgba(15,23,32,0.6) !important;
     padding: 8px 0;
     font-size: 0.8rem;
-    display: block;
-    text-align: center;
+    text-align: center !important;
   }
   .nav__dropdown-menu a:hover {
     background: transparent;
     color: var(--navy-deep) !important;
   }
-  .nav__dropdown.is-open .nav__dropdown-menu { display: block; }
+  .nav__dropdown.is-open .nav__dropdown-menu { display: flex !important; }
 
   /* Mobile nav sponsor */
   .nav__links.open .nav__sponsor {
