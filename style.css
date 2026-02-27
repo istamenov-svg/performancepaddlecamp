@@ -975,6 +975,93 @@ p:last-child { margin-bottom: 0; }
   color: rgba(255,255,255,0.8);
 }
 
+/* --- Camp Focus Grid --- */
+.camp-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  max-width: 960px;
+  margin: 48px auto 0;
+}
+.camp-focus-item {
+  text-align: center;
+  padding: 32px 20px;
+  background: var(--off-white);
+  border-radius: var(--radius);
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.camp-focus-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.camp-focus-icon {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--sand);
+  margin-bottom: 16px;
+}
+.camp-focus-item h4 {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+.camp-focus-item p {
+  font-size: 0.85rem;
+  color: rgba(0,0,0,0.55);
+  line-height: 1.6;
+}
+.camp-tagline {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--navy-deep);
+  line-height: 1.5;
+  text-align: center;
+}
+.camp-tagline strong {
+  color: var(--sand-muted);
+}
+
+/* --- Camp Expect Grid --- */
+.camp-expect-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 720px;
+  margin: 40px auto 0;
+}
+.camp-expect-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.camp-expect-num {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--sand);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.camp-expect-item p {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .camp-focus-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .camp-focus-item { padding: 24px 16px; }
+  .camp-expect-grid { grid-template-columns: 1fr; }
+  .camp-tagline { font-size: 1.1rem; }
+}
+@media (max-width: 480px) {
+  .camp-focus-grid { grid-template-columns: 1fr; }
+}
+
 /* --- Countdown Bar --- */
 .countdown-bar {
   background: var(--navy-deep);
