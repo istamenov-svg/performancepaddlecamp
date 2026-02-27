@@ -976,6 +976,32 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* --- Camp Focus Grid --- */
+.coach__hof-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--sand-muted);
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+.coach__hof-link:hover {
+  color: var(--sand);
+  border-bottom-color: var(--sand);
+}
+.section--cream .coach__hof-link {
+  color: var(--sand-muted);
+}
+.section--cream .coach__hof-link:hover {
+  color: var(--navy-deep);
+  border-bottom-color: var(--navy-deep);
+}
+
+/* --- Camp Focus Grid --- */
 .camp-focus-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
