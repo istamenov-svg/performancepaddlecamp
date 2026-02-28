@@ -200,6 +200,18 @@ p:last-child { margin-bottom: 0; }
 }
 .nav__sponsor:hover .nav__sponsor-img { opacity: 1; }
 
+.nav__instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  color: var(--navy-deep);
+  opacity: 0.5;
+  transition: opacity 0.25s ease, color 0.25s ease;
+}
+.nav__instagram:hover { opacity: 1; }
+.nav--scrolled .nav__instagram { color: var(--navy-deep); }
+
 /* --- Hero Logo --- */
 .hero__logo {
   width: 252px;
@@ -1392,6 +1404,10 @@ p:last-child { margin-bottom: 0; }
     margin-left: 0;
     padding-top: 12px;
     border-top: 1px solid rgba(0,0,0,0.08);
+  }
+  .nav__links.open .nav__instagram {
+    margin-left: 0;
+    padding-top: 8px;
   }
 
   .nav__logo {
