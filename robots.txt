@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://istamenov-svg.github.io/performancepaddlecamp/sitemap.xml
+Sitemap: https://performancepaddlecamp.com/sitemap.xml
 
 # Disallow thank-you page from indexing
-Disallow: /performancepaddlecamp/thank-you.html
+Disallow: /thank-you.html
